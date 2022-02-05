@@ -1,4 +1,4 @@
-package Wechat;
+package Misc;
 
 import java.util.ArrayList;
 import java.util.HashSet;
