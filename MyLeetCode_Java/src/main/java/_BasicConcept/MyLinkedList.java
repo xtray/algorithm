@@ -1,6 +1,6 @@
 package _BasicConcept;
 
-public class LinkedList {
+public class MyLinkedList {
     public static class Node {
         public int value;
         public Node next;
