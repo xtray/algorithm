@@ -8,6 +8,9 @@ import java.util.*;
 
 public class Problem_000_LongestIncreasingSubsequence {
 
+    // 最长递增子序列
+    // ends 数组+ dp 表
+    // dp 表可以把所有长度为最大值的递增子序列求出来
     public static List<Integer> longestIncreasingSubsequence(int[] arr) {
 
         if (arr == null || arr.length == 0) {
