@@ -1,4 +1,4 @@
-package LeetCode.Contest.W282;
+package LeetCode.W282;
 
 public class Problem_6008_PrefixCount {
 
