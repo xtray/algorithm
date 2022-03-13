@@ -3,7 +3,7 @@ package LeetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Problem_869_getAllNums {
+public class Problem_869_GetAllNums {
 
     private static int getRealNum(int[] input) {
         int N = input.length;
