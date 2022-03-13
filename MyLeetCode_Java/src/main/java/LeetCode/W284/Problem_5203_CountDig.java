@@ -25,6 +25,7 @@ public class Problem_5203_CountDig {
             }
             sizeMap.put(idx++, size);
         }
+        int ans = 0;
         for (int[] d : dig) {
             int dx = d[0];
             int dy = d[1];
@@ -32,12 +33,9 @@ public class Problem_5203_CountDig {
             if (idxMap.containsKey(oneD)) {
                 int bid = idxMap.get(oneD);
                 sizeMap.put(bid, sizeMap.get(bid) - 1);
-            }
-        }
-        int ans = 0;
-        for (int v : sizeMap.values()) {
-            if (v == 0) {
-                ans++;
+                if(sizeMap.get(bid) == 0) {
+                    ans++;
+                }
             }
         }
         return ans;
