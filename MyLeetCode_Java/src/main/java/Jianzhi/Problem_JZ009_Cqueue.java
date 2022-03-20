@@ -2,12 +2,12 @@ package Jianzhi;
 
 import java.util.LinkedList;
 
-public class Problem_009_Cqueue {
+public class Problem_JZ009_Cqueue {
 
     private LinkedList<Integer> stack1;
     private LinkedList<Integer> stack2;
 
-    public Problem_009_Cqueue() {
+    public Problem_JZ009_Cqueue() {
         stack1 = new LinkedList<>();
         stack2= new LinkedList<>();
     }
