@@ -1,4 +1,4 @@
-package _Misc;
+package BigCom;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,7 @@ import java.util.List;
  * 1
  */
 
-public class WorkCell {
+public class Problem_000_WorkCell {
 
 
     public static class SegmentTree {
@@ -109,7 +109,7 @@ public class WorkCell {
     private int N;
     private int b;
 
-    public WorkCell(int N, int b) {
+    public Problem_000_WorkCell(int N, int b) {
         seg = new SegmentTree[N + 1]; // 1~1000
         for (int i = 1; i <= N; i++) {
             seg[i] = new SegmentTree(N);
@@ -253,7 +253,7 @@ public class WorkCell {
         int n = 4;
         int b = 10;
         int[][] circles = {{0, 1, 1}, {0, 3, 1}, {0, 4, 1}, {0, 7, 2}, {0, 8, 2}};
-        WorkCell wc = new WorkCell(1000, b);
+        Problem_000_WorkCell wc = new Problem_000_WorkCell(1000, b);
         int res = wc.fallingCells(n, b, circles);
         int res2 = wc.fallingCells2(n, b, circles);
         System.out.println(res);

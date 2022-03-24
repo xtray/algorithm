@@ -1,6 +1,6 @@
 package LeetCode.Jianzhi;
 
-public class Problem_JZ51_ReversePairs {
+public class Problem_JZ051_ReversePairs {
 
     public int reversePairs(int[] nums) {
         if (nums == null || nums.length == 0) {
@@ -47,7 +47,7 @@ public class Problem_JZ51_ReversePairs {
 
     public static void main(String[] args) {
         int[] nums = {7, 5, 6, 4};
-        var ans = new Problem_JZ51_ReversePairs().reversePairs(nums);
+        var ans = new Problem_JZ051_ReversePairs().reversePairs(nums);
         System.out.println(ans);
     }
 }

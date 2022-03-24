@@ -1,4 +1,4 @@
-package LeetCode.BINARY.EASY;
+package LeetCode;
 
 public class Problem_053_MaxSubArray {
 
@@ -38,6 +38,21 @@ public class Problem_053_MaxSubArray {
             }
             maxSum = Math.max(maxSum, cur);
             pre = cur;
+        }
+        return maxSum;
+    }
+
+    public int maxSubArray3(int[] nums) {
+        if(nums == null || nums.length ==0) {
+            return 0;
+        }
+        int N = nums.length;
+        int maxSum = nums[0];
+        int cur = nums[0];
+        for(int i = 1; i<N;i++) {
+            // NOTE: 跟0比, pre可以省掉
+            cur = nums[i] + Math.max(0, cur);
+            maxSum = Math.max(maxSum, cur);
         }
         return maxSum;
     }

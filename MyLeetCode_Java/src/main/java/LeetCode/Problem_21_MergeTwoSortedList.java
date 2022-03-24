@@ -1,6 +1,6 @@
 package LeetCode;
 
-public class Problem_021_MergeTwoSortedList {
+public class Problem_21_MergeTwoSortedList {
 
     public class ListNode {
         int val;

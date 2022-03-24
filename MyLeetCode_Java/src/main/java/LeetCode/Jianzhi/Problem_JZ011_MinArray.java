@@ -1,6 +1,6 @@
 package LeetCode.Jianzhi;
 
-public class Problem_JZ11_MinArray {
+public class Problem_JZ011_MinArray {
 
     // 二分, 找<= 最后一个数最左的位置
     public int minArray(int[] arr) {
@@ -24,7 +24,7 @@ public class Problem_JZ11_MinArray {
         // int[] arr = {3, 1, 3};
         // int[] arr = {3, 3, 3};
         int[] arr = {1, 3, 5};
-        var ans = new Problem_JZ11_MinArray().minArray(arr);
+        var ans = new Problem_JZ011_MinArray().minArray(arr);
         System.out.println(ans);
     }
 }

@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.Jianzhi;
 
 public class Problem_JZ025_MergeTwoSortedList {
 

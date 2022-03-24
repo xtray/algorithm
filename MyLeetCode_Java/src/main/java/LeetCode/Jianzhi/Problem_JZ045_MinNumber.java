@@ -1,4 +1,4 @@
-package LeetCode.BINARY.MEDIUM;
+package LeetCode.Jianzhi;
 
 import java.util.Arrays;
 

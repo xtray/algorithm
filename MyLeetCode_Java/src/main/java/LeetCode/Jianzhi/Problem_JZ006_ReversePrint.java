@@ -1,67 +1,92 @@
 package LeetCode.Jianzhi;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class Problem_JZ006_ReversePrint {
     public static class ListNode {
         int val;
         ListNode next;
+
         ListNode(int x) {
             val = x;
         }
     }
 
+    // IMP: 用栈的解法
     public int[] reversePrint(ListNode head) {
-        if(head == null) {
+        if (head == null) {
             return new int[]{};
         }
-        if(head.next == null) {
-            return new int[]{head.val};
+        LinkedList<Integer> stack = new LinkedList<>();
+        while (head != null) {
+            stack.addFirst(head.val);
+            head = head.next;
         }
-        // 至少有两个
-        ListNode pre = null;
-        ListNode cur = head;
-        int size = 0;
-        while (cur!=null) {
-            ListNode next = cur.next;
-            cur.next = pre;
-            pre = cur;
-            cur = next;
-            size++;
-        }
-        int[] ans = new int[size];
-        cur = pre;
+        int[] ans = new int[stack.size()];
         int idx = 0;
-        pre = null;
-        while (cur!=null) {
-            ans[idx++] = cur.val;
-            ListNode next = cur.next;
-            cur.next = pre;
-            pre = cur;
-            cur = next;
+        while (!stack.isEmpty()) {
+            ans[idx++] = stack.pollFirst();
         }
         return ans;
     }
 
+    // 倒着填
     public int[] reversePrint2(ListNode head) {
         if (head == null) {
             return new int[]{};
         }
-        if (head.next == null) {
-            return new int[]{head.val};
-        }
-        int cnt = 0;
+        int size = 0;
         ListNode cur = head;
-        while (cur!=null) {
-            cnt++;
+        while (cur != null) {
+            size++;
             cur = cur.next;
         }
-        int[] ans = new int[cnt];
+        int[] ans = new int[size];
+        int idx = size - 1;
         cur = head;
-        int idx = cnt - 1;
-        while (cur!=null) {
+        while (cur != null) {
             ans[idx--] = cur.val;
             cur = cur.next;
         }
         return ans;
+    }
+
+    // 链表逆序
+    // IMP: 链表逆序, 不要忘了再逆序回来
+    public int[] reversePrint3(ListNode head) {
+        if (head == null) {
+            return new int[]{};
+        }
+        List<Integer> ans = new ArrayList<>();
+        ListNode reversed = reverse(head);
+        ListNode node = reversed;
+        while (node != null) {
+            ans.add(node.val);
+            node = node.next;
+        }
+        reverse(reversed);
+        int[] res = new int[ans.size()];
+        int idx = 0;
+        for (int num : ans) {
+            res[idx++] = num;
+        }
+        return res;
+    }
+
+    private ListNode reverse(ListNode head) {
+        if (head == null) {
+            return head;
+        }
+        ListNode pre = null;
+        while (head != null) {
+            ListNode next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+        return pre;
     }
 
 }
