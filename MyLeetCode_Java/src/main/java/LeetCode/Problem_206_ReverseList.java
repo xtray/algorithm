@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.BINARY.EASY;
 
 public class Problem_206_ReverseList {
     public static class ListNode {
