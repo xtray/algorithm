@@ -66,6 +66,8 @@ public class Problem_689_PreOrder {
     }
 
 
+    // IMP: 标准的前序遍历写法
+    // 弹出就打印, 倒着添加!
     public List<Integer> preorder3(Node root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) {
