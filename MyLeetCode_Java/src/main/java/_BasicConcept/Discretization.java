@@ -3,8 +3,10 @@ package _BasicConcept;
 import java.util.Arrays;
 import java.util.HashMap;
 
+// IMP: 怎么做离散化, 非常重要!!
+
 public class Discretization {
-    // 怎么做离散化
+
     // [45,6,89] -> [1,0,2]
     public static void change(int[] arr) {
         // [45,6,89] -> [45,6,89]

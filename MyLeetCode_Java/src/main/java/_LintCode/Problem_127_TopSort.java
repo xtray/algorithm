@@ -3,6 +3,7 @@ package _LintCode;
 import java.util.*;
 
 // https://www.lintcode.com/problem/127/
+// IMP: 重要, 多看!!
 
 public class Problem_127_TopSort {
 

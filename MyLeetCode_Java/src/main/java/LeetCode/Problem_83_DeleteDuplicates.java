@@ -24,21 +24,22 @@ public class Problem_83_DeleteDuplicates {
         }
     }
 
+
+    // IMP: 重要基础题
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null) {
             return head;
         }
-        ListNode pre = null;
-        ListNode node = head;
-        while (node != null) {
+        ListNode pre = head;
+        ListNode node = head.next;
+        while (node != null) { // 如果一上来node == null, 说明只有一个结点
             ListNode next = node.next;
-            if (pre != null && node.val == pre.val) {
-                pre.next = next;
-                node = next;
+            if (node.val == pre.val) {
+                pre.next = next; // 不需要调整pre
             } else {
                 pre = node;
-                node = node.next;
             }
+            node = next;
         }
         return head;
     }

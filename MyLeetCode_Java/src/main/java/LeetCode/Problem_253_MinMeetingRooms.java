@@ -2,47 +2,35 @@ package LeetCode;
 
 import java.util.*;
 
+// IMP: 重要基础题!!! 扫描线 / 堆 / 线段树 都可以做
+
 public class Problem_253_MinMeetingRooms {
 
-    // https://leetcode-cn.com/problems/meeting-rooms-ii/solution/53-hui-yi-shi-iizhong-die-qu-jian-by-eil-ewai/
+    // NOTE: 扫描线的做法
+    // 可以理解为做公共车, 上车+1, 下车-1, 求的就是在车上的最大人数
     public int minMeetingRooms(int[][] intervals) {
         if (intervals == null || intervals.length == 0) {
             return 0;
         }
-        // 因为所有会议都要安排, 所以要按开始时间排序
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
-        List<int[]> meetingList = new ArrayList<>();
-        Collections.addAll(meetingList, intervals);
-        int number = 0;
-        while (!meetingList.isEmpty()) {
-            number++;
-            List<int[]> leftList = new ArrayList<>();
-            int timeline = 0; // 当前来到的时间
-            // 依次遍历每一个会议，结束时间早的会议先遍历
-            for (int[] meeting : meetingList) {
-                if (timeline <= meeting[0]) { // 可以安排
-                    timeline = meeting[1];
-                } else {
-                    // 不能安排的存起来
-                    leftList.add(meeting);
-                }
-            }
-            meetingList = leftList;
+        // NOTE: 用List<int[]>的方式代码更好些一点
+        List<int[]> list = new ArrayList<>();
+        for (int[] interval : intervals) {
+            list.add(new int[]{interval[0], 1}); // 开始的时间+1
+            list.add(new int[]{interval[1], -1}); // 结束的时间-1
         }
-        return number;
+        // NOTE: 按时间排序, 时间一样的, 下车的在前, 上车的在后
+        list.sort((o1, o2) -> o1[0] != o2[0] ? o1[0] - o2[0] : o1[1] - o2[1]);
+        // 进行扫描
+        int cnt = 0;
+        int ans = 0;
+        for (int[] p : list) {
+            cnt += p[1];
+            ans = Math.max(ans, cnt);
+        }
+        return ans;
     }
 
-    // int[i][2]
-    // 按结束时间早的排前面, 结束时间一样的, 开始早的放前面
-    public class MeetingComparator implements Comparator<int[]> {
-
-        @Override
-        public int compare(int[] o1, int[] o2) {
-            return o1[1] != o2[1] ? o1[1] - o2[1] : o1[0] - o2[0];
-        }
-    }
-
-    public class Node {
+    public static class Node {
         int time;
         int point;
 
@@ -52,18 +40,19 @@ public class Problem_253_MinMeetingRooms {
         }
     }
 
-    // 实际上就是统计同一时间的最大会议数量
+    // 扫描线用数组的另外一种写法
     public int minMeetingRooms1(int[][] intervals) {
         if (intervals == null || intervals.length == 0) {
             return 0;
         }
-        Node[] nodelist = new Node[intervals.length << 1];
-        for (int i = 0; i < intervals.length; i++) {
+        int N = intervals.length;
+        Node[] nodelist = new Node[N << 1];
+        for (int i = 0; i < N; i++) {
             nodelist[i << 1] = new Node(intervals[i][0], 1);
             nodelist[i << 1 | 1] = new Node(intervals[i][1], -1);
         }
-        // 负值需要排在前面, 否则结果错误!
-        Arrays.sort(nodelist, (a, b) -> a.time != b.time ? a.time - b.time: a.point - b.point);
+        // NOTE: 负值需要排在前面, 否则结果错误!
+        Arrays.sort(nodelist, (a, b) -> a.time != b.time ? a.time - b.time : a.point - b.point);
         int ans = 0;
         int cnt = 0;
         for (Node node : nodelist) {
@@ -73,8 +62,31 @@ public class Problem_253_MinMeetingRooms {
         return ans;
     }
 
+    // 堆的做法
+    public int minMeetingRooms2(int[][] intervals) {
+        if (intervals == null || intervals.length == 0) {
+            return 0;
+        }
+        Arrays.sort(intervals, (o1, o2) -> o1[0] - o2[0]);
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        int ans = 0;
+        for (int[] interval : intervals) {
+            int start = interval[0]; // 当前到来的时间点
+            int end = interval[1]; // 会议结束时间点
+            while (!pq.isEmpty() && pq.peek() <= start) {
+                // 开始时间之前的都弹出
+                pq.poll();
+            }
+            pq.add(end);
+            ans = Math.max(ans, pq.size());
+        }
+        return ans;
+    }
+
+    // 开点线段树的做法
+
     public static void main(String[] args) {
-        Problem_253_MinMeetingRooms sl = new Problem_253_MinMeetingRooms();
+        var sl = new Problem_253_MinMeetingRooms();
 //        int[][] intervals = new int[][]{{0,30},{5,10},{15,20}};
 //        int[][] intervals = new int[][]{{2, 15}, {36, 45}, {9, 29}, {16, 23}, {4, 9}};
         int[][] intervals = new int[][]{{13, 15}, {1, 13}};
@@ -82,6 +94,8 @@ public class Problem_253_MinMeetingRooms {
         System.out.println(ans);
         int ans1 = sl.minMeetingRooms1(intervals);
         System.out.println(ans1);
+        int ans2 = sl.minMeetingRooms2(intervals);
+        System.out.println(ans2);
     }
 
 }

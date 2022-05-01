@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// TOOD: 先看课, 再补水平序列化!!
+
 public class Problem_297_SerDeBinTree {
 
     public static class TreeNode {

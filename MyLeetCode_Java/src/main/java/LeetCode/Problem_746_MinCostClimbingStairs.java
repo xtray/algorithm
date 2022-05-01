@@ -21,6 +21,7 @@ public class Problem_746_MinCostClimbingStairs {
         return Math.min(p1, p2);
     }
 
+    // NOTE: 注意这种写法, 跟上面的区别
     public int minCostClimbingStairs2(int[] cost) {
         if (cost == null || cost.length == 0) {
             return -1;
@@ -29,7 +30,6 @@ public class Problem_746_MinCostClimbingStairs {
     }
 
     // 当前来到index台阶, 登录到N-1台阶花费的最小费用
-    // 之前的费用pre
     // TLE
     private int process2(int[] cost, int index) {
         if (index >= cost.length) {
@@ -40,17 +40,17 @@ public class Problem_746_MinCostClimbingStairs {
         return Math.min(p1, p2);
     }
 
-
+    // 改动态规划
     public int minCostClimbingStairs3(int[] cost) {
         if (cost == null || cost.length == 0) {
             return -1;
         }
         int N = cost.length;
-        int[] dp = new int[N+2];
-        for(int i = N-1; i>=0; i--) {
-            dp[i] = cost[i] + Math.min(dp[i+1], dp[i+2]);
+        int[] dp = new int[N + 2];
+        // dp[N], dp[N+1] 都是 0
+        for (int i = N - 1; i >= 0; i--) {
+            dp[i] = cost[i] + Math.min(dp[i + 1], dp[i + 2]);
         }
-
         return Math.min(dp[0], dp[1]);
     }
 
@@ -60,14 +60,14 @@ public class Problem_746_MinCostClimbingStairs {
             return -1;
         }
         int N = cost.length;
-        int post1 = 0;
-        int post2 = 0;
-        for(int i = N-1; i>=0; i--) {
-            int cur = cost[i] + Math.min(post1, post2);
-            post2 = post1;
-            post1 = cur;
+        int step1 = 0; // 一步 dp[N]
+        int step2 = 0; // 两步 dp[N+1]
+        for (int i = N - 1; i >= 0; i--) {
+            int cur = cost[i] + Math.min(step1, step2);
+            step2 = step1;
+            step1 = cur;
         }
-        return Math.min(post1, post2);
+        return Math.min(step1, step2);
     }
 
     public static void main(String[] args) {

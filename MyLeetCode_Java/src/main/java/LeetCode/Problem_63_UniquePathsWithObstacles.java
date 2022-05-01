@@ -1,5 +1,7 @@
 package LeetCode;
 
+// IMP: 重要基础题
+
 public class Problem_63_UniquePathsWithObstacles {
 
 
@@ -10,7 +12,7 @@ public class Problem_63_UniquePathsWithObstacles {
         }
         int N = obstacleGrid.length;
         int M = obstacleGrid[0].length;
-        int ans = process1(obstacleGrid, N-1, M-1);
+        int ans = process1(obstacleGrid, N - 1, M - 1);
 //        int ans = process2(obstacleGrid, 0, 0);
         return ans;
 
@@ -20,18 +22,18 @@ public class Problem_63_UniquePathsWithObstacles {
     private int process1(int[][] grid, int i, int j) {
         int N = grid.length;
         int M = grid[0].length;
-        if ( i == 0 && j == 0) {
-            return grid[i][j] == 1?0:1;
+        if (i == 0 && j == 0) {
+            return grid[i][j] == 1 ? 0 : 1;
         }
 
-        if (i <0 || j < 0|| grid[i][j] == 1) {
+        if (i < 0 || j < 0 || grid[i][j] == 1) {
             return 0;
         }
 
         // 从上方来
-        int p1 = process2(grid, i-1, j);
+        int p1 = process2(grid, i - 1, j);
         // 从左方来
-        int p2 = process2(grid, i, j-1);
+        int p2 = process2(grid, i, j - 1);
         return p1 + p2;
 
     }
@@ -60,21 +62,21 @@ public class Problem_63_UniquePathsWithObstacles {
         int N = grid.length;
         int M = grid[0].length;
         int[][] dp = new int[N][M];
-        dp[N-1][M-1] = grid[N-1][M-1] == 1?0:1;
+        dp[N - 1][M - 1] = grid[N - 1][M - 1] == 1 ? 0 : 1;
         // 填倒数第1行
-        for (int j = M - 2; j>=0; j--) {
-            dp[N-1][j] = grid[N-1][j] == 1? 0:dp[N-1][j+1];
+        for (int j = M - 2; j >= 0; j--) {
+            dp[N - 1][j] = grid[N - 1][j] == 1 ? 0 : dp[N - 1][j + 1];
         }
         // 填倒数第1列
-        for (int i = N - 2; i>=0; i--) {
-            dp[i][M-1] = grid[i][M-1] == 1? 0:dp[i+1][M-1];
+        for (int i = N - 2; i >= 0; i--) {
+            dp[i][M - 1] = grid[i][M - 1] == 1 ? 0 : dp[i + 1][M - 1];
         }
-        for (int j = M - 2; j>=0; j--) {
-            for (int i = N - 2; i>=0; i--) {
+        for (int j = M - 2; j >= 0; j--) {
+            for (int i = N - 2; i >= 0; i--) {
                 if (grid[i][j] == 1) {
                     dp[i][j] = 0;
                 } else {
-                    dp[i][j] = dp[i+1][j] + dp[i][j+1];
+                    dp[i][j] = dp[i + 1][j] + dp[i][j + 1];
                 }
             }
         }

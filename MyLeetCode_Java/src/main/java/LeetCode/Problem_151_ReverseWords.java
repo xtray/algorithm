@@ -6,30 +6,27 @@ import java.util.LinkedList;
 public class Problem_151_ReverseWords {
 
     public static String reverseWords(String s) {
-        if (s == null ||s.length()==0) {
+        if (s == null || s.length() == 0) {
             return s;
         }
         char[] str = s.toCharArray();
+        int N = str.length;
         int L = 0;
-        int R = str.length - 1;
-        // 跳过首尾的空格
-        while (str[L]==' '){L++;}
-        while (str[R]==' '){R--;}
+        int R = N - 1;
+        while (L < N && str[L] == ' ') L++;
+        while (R >= 0 && str[R] == ' ') R--;
         LinkedList<String> stack = new LinkedList<>();
-
         while (L <= R) {
             StringBuilder sb = new StringBuilder();
-            while (L<=R && str[L] != ' ') {
-                sb.append(str[L++]);
-            }
+            while (L <= R && str[L] != ' ') sb.append(str[L++]);
             stack.push(sb.toString());
-            if(L<R) {
+            if (L < R) {
                 stack.push(" ");
             }
-            while (L<=R && str[L]==' ') {L++;};
+            while (L <= R && str[L] == ' ') L++;
         }
         StringBuilder sb = new StringBuilder();
-        while(!stack.isEmpty()) {
+        while (!stack.isEmpty()) {
             sb.append(stack.pop());
         }
         return sb.toString();

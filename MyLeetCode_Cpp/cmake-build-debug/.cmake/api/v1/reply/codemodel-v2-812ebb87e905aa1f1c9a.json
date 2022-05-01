@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LeetCodeCpp2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CMakeCXXCompilerId::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CMakeCXXCompilerId-Debug-80a222df97fe2ee6bfe7.json",
+					"name" : "CMakeCXXCompilerId",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LN_LvalRval01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LN_LvalRval01-Debug-60f393a45be4fa48b4d3.json",
+					"name" : "LN_LvalRval01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LN_LvalRval02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LN_LvalRval02-Debug-ee15d73d0c3fd17dd3e9.json",
+					"name" : "LN_LvalRval02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Problem_397_IntegerReplacement::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Problem_397_IntegerReplacement-Debug-36bf0d267c9e205f2210.json",
+					"name" : "Problem_397_IntegerReplacement",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TEST_StringFunc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TEST_StringFunc-Debug-929d426d499b17114d99.json",
+					"name" : "TEST_StringFunc",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/cmake-build-debug",
+		"source" : "/Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

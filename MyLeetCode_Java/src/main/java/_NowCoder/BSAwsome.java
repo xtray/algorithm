@@ -1,6 +1,6 @@
 package _NowCoder;
 
-
+// IMP: 在数组中找到一个局部最小的位置
 // https://www.nowcoder.com/questionTerminal/d1c8838fc9e54b89bc10b5b6d2b52157
 public class BSAwsome {
 
@@ -48,12 +48,10 @@ public class BSAwsome {
         if (arr[N - 1] < arr[N - 2]) {
             return N - 1;
         }
-
-        int mid = 0;
         int L = 1;
         int R = N - 2;
         while (L < R) {
-            mid = L + ((R - L) >> 1);
+            int mid = L + ((R - L) >> 1);
             if (arr[mid] > arr[mid - 1]) {
                 R = mid - 1;
             } else if (arr[mid] > arr[mid + 1]) {

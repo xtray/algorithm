@@ -1,4 +1,4 @@
-package LeetCode.BINARY.EASY;
+package LeetCode.MianshiJindian.EASY;
 
 public class Problem_206_ReverseList {
     public static class ListNode {

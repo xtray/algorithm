@@ -21,21 +21,23 @@ public class Problem_104_MaxDepth {
         }
 
         // 解法1: 二叉树的递归套路解法
-        public static class  Info{
+        public static class Info {
             public int maxHeight;
+
             public Info(int h) {
                 maxHeight = h;
             }
         }
+
         public int maxDepth(TreeNode root) {
-            if(root == null) {
+            if (root == null) {
                 return 0;
             }
             return process(root).maxHeight;
         }
 
         private Info process(TreeNode root) {
-            if(root == null) {
+            if (root == null) {
                 return new Info(0);
             }
             Info leftInfo = process(root.left);
@@ -47,14 +49,14 @@ public class Problem_104_MaxDepth {
 
         // 解法2: 普通递归
         public int maxDepth2(TreeNode root) {
-            if(root == null) {
+            if (root == null) {
                 return 0;
             }
             return process2(root);
         }
 
         private int process2(TreeNode root) {
-            if(root == null) {
+            if (root == null) {
                 return 0;
             }
             return Math.max(process2(root.left), process2(root.right)) + 1;
