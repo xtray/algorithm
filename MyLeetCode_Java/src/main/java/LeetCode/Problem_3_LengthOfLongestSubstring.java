@@ -1,6 +1,10 @@
 package LeetCode;
 
-// NOTE: 重要基础题
+// IMP: 重要基础题!!
+// NOTE: 滑动窗口模板题
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Problem_3_LengthOfLongestSubstring {
 
@@ -33,7 +37,7 @@ public class Problem_3_LengthOfLongestSubstring {
         return ans;
     }
 
-    public int lengthOfLongestSubstring2(String s) {
+    public int lengthOfLongestSubstring1(String s) {
         if (s == null || s.length() == 0) {
             return 0;
         }
@@ -50,6 +54,29 @@ public class Problem_3_LengthOfLongestSubstring {
             pre = Math.min(i - map[str[i]], pre + 1);
             ans = Math.max(ans, pre);
             map[str[i]] = i;
+        }
+        return ans;
+    }
+
+    // 不定长滑动窗口解法
+    public int lengthOfLongestSubstring2(String s) {
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+        char[] str = s.toCharArray();
+        int N = str.length;
+        int L = 0;
+        int R = 0;
+        int ans = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        while (R < N) {
+            map.put(str[R], map.getOrDefault(str[R], 0) + 1);
+            while (map.get(str[R]) > 1) {
+                map.put(str[L], map.get(str[L]) - 1);
+                L++;
+            }
+            ans = Math.max(ans, R - L + 1);
+            R++;
         }
         return ans;
     }

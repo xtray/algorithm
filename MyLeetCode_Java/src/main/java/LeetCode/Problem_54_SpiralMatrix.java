@@ -7,7 +7,7 @@ package LeetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Problem_54_SpiralMatrix{
+public class Problem_54_SpiralMatrix {
 
     public List<Integer> spiralOrder(int[][] matrix) {
         if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
@@ -16,51 +16,51 @@ public class Problem_54_SpiralMatrix{
 
         int N = matrix.length;
         int M = matrix[0].length;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = N - 1;
-        int y2 = M - 1;
+        int a = 0;
+        int b = 0;
+        int c = N - 1;
+        int d = M - 1;
         List<Integer> ans = new ArrayList<>();
-        while (x1 <= x2 && y1 <= y2) {
-            printOneLoop(matrix, x1++, y1++, x2--, y2--, ans);
+        while (a <= c && b <= d) {
+            printOneLoop(matrix, a++, b++, c--, d--, ans);
         }
         return ans;
     }
 
-    // 从(x1,y1) -- > (x2,y2) 一圈打印
-    private void printOneLoop(int[][] matrix, int x1, int y1, int x2, int y2, List<Integer> ans) {
-        if (x1 == x2) {
-            for (int j = y1; j <= y2; j++) {
-                ans.add(matrix[x1][j]);
+    // 从(a,b) -- > (c,d) 一圈打印
+    private void printOneLoop(int[][] matrix, int a, int b, int c, int d, List<Integer> ans) {
+        if (a == c) {
+            for (int j = b; j <= d; j++) {
+                ans.add(matrix[a][j]);
             }
-        } else if (y1 == y2) {
-            for (int i = x1; i <= x2; i++) {
-                ans.add(matrix[i][y1]);
+        } else if (b == d) {
+            for (int i = a; i <= c; i++) {
+                ans.add(matrix[i][b]);
             }
         } else {
             // 上边
-            for (int j = y1; j < y2; j++) {
-                ans.add(matrix[x1][j]);
+            for (int j = b; j < d; j++) {
+                ans.add(matrix[a][j]);
             }
             // 右侧
-            for (int i = x1; i < x2; i++) {
-                ans.add(matrix[i][y2]);
+            for (int i = a; i < c; i++) {
+                ans.add(matrix[i][d]);
             }
             // 下边
-            for (int j = y2; j > y1; j--) {
-                ans.add(matrix[x2][j]);
+            for (int j = d; j > b; j--) {
+                ans.add(matrix[c][j]);
             }
             // 左边
-            for (int i = x2; i > x1; i--) {
-                ans.add(matrix[i][y1]);
+            for (int i = c; i > a; i--) {
+                ans.add(matrix[i][b]);
             }
         }
     }
 
 
     public static void main(String[] args) {
-       Problem_54_SpiralMatrix sl = new Problem_54_SpiralMatrix();
-       
+        Problem_54_SpiralMatrix sl = new Problem_54_SpiralMatrix();
+
     }
 
 }

@@ -1,6 +1,7 @@
 package LeetCode;
 
-import java.util.LinkedList;
+
+import java.util.ArrayDeque;
 
 public class Problem_150_EvalRPN {
 
@@ -9,7 +10,7 @@ public class Problem_150_EvalRPN {
         if (tokens == null || tokens.length == 0) {
             return 0;
         }
-        LinkedList<Integer> stack = new LinkedList<>();
+        ArrayDeque<Integer> stack = new ArrayDeque<>();
         for (String str : tokens) {
             if (str.equals("+") || str.equals("-") || str.equals("*") || str.equals("/")) {
                 compute(stack, str);
@@ -20,7 +21,8 @@ public class Problem_150_EvalRPN {
         return stack.peekFirst();
     }
 
-    private void compute(LinkedList<Integer> stack, String str) {
+    // 遇到符号, 从栈里弹出两个数计算, 结果压回去
+    private void compute(ArrayDeque<Integer> stack, String str) {
         int num2 = stack.pollFirst(); // NOTE: 注意弹出两个数的顺序
         int num1 = stack.pollFirst();
         int ans = 0;

@@ -1,8 +1,9 @@
 package LeetCode;
 
+import java.util.ArrayDeque;
 import java.util.LinkedList;
 
-// IMP: 非常重要的基本模型, 多写多练
+// IMP: 单调队列, 非常重要的板子题, 多写多练
 
 public class Problem_239_SlidingWindowMax {
 
@@ -31,4 +32,32 @@ public class Problem_239_SlidingWindowMax {
         }
         return res;
     }
+
+    public int[] maxSlidingWindow2(int[] arr, int k) {
+        if (arr == null || k < 1 || arr.length < k) {
+            return new int[]{};
+        }
+        int N = arr.length;
+        int[] ans = new int[N - k + 1];
+        // 单调队列, 头部是最大值 大-->小
+        ArrayDeque<Integer> qmax = new ArrayDeque<>();
+        for (int i = 0; i < N; i++) {
+            // 1. 往里进数(需要判断是否符合条件)
+            while (!qmax.isEmpty() && arr[qmax.peekLast()] <= arr[i]) {
+                qmax.pollLast();
+            }
+            qmax.addLast(i);
+            // 2. 改出的出
+            if (qmax.peekFirst() == i - k) { // 上一步刚加入数, 不可能为空
+                qmax.pollFirst();
+            }
+            // 3. 收集答案
+            if (i - k + 1 >= 0) { // k最小为1, 窗口至少有1个数
+                ans[i - k + 1] = arr[qmax.peekFirst()];
+            }
+        }
+        return ans;
+    }
+
+
 }

@@ -1,7 +1,5 @@
 package LeetCode;
 
-import _BasicConcept.Morris;
-
 public class Problem_98_IsValidBST {
 
     public static class TreeNode {
