@@ -1,7 +1,5 @@
 package LeetCode;
 
-import javax.swing.tree.TreeNode;
-
 public class Problem_1448_GoodNodes {
     public static class TreeNode {
         int val;

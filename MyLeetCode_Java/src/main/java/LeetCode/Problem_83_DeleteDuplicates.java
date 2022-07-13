@@ -1,7 +1,5 @@
 package LeetCode;
 
-import java.util.List;
-
 /**
  * IMP: 重要基础题!!
  */

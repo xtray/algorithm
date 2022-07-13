@@ -42,6 +42,16 @@ public class Problem_145_PostOrderTraversal {
         ans.add(root.val);
     }
 
+    // Morris实现后序遍历
+    public List<Integer> postorderTraversal1(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        if (root == null) {
+            return ans;
+        }
+        postOrderMorris(root, ans);
+        return ans;
+    }
+
     private void postOrderMorris(TreeNode root, List<Integer> ans) {
         if (root == null) {
             return;
@@ -58,16 +68,15 @@ public class Problem_145_PostOrderTraversal {
                     mostRight.right = cur;
                     cur = cur.left;
                     continue;
-                } else {
-                    mostRight.right = null;
-                    // 第二次回到自己的时候, 逆序打印自己的左树右边界
-                    // NOTE: !!注意顺序, 要放在置空指针之后
-                    printEdge(cur.left, ans);
                 }
+                mostRight.right = null;
+                // 第二次回到自己的时候, 逆序打印自己的左树右边界
+                // NOTE: !!注意顺序, 要放在置空指针之后
+                printEdge(cur.left, ans);
             }
             cur = cur.right;
         }
-        // 最后不要忘了逆序打印整棵树的右边界
+        // NOTE: 最后不要忘了逆序打印整棵树的右边界
         printEdge(root, ans);
     }
 

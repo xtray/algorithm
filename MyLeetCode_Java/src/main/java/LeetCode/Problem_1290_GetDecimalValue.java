@@ -1,7 +1,5 @@
 package LeetCode;
 
-import java.util.List;
-
 public class Problem_1290_GetDecimalValue {
 
     public static class ListNode {

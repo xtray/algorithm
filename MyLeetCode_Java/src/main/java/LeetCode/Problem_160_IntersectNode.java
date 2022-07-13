@@ -1,7 +1,5 @@
 package LeetCode;
 
-import java.util.List;
-
 public class Problem_160_IntersectNode {
     public class ListNode {
         int val;

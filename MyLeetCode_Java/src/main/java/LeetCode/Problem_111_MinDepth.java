@@ -29,21 +29,21 @@ public class Problem_111_MinDepth {
         return process(root);
     }
 
+    // 返回以root为头结点的二叉树的最小深度
     private int process(TreeNode root) {
-        if(root.left == null && root.right == null) {
+        if (root.left == null && root.right == null) {
             return 1;
         }
         int leftH = Integer.MAX_VALUE;
-        if(root.left != null) {
+        if (root.left != null) {
             leftH = process(root.left);
         }
         int rightH = Integer.MAX_VALUE;
-        if(root.right != null) {
+        if (root.right != null) {
             rightH = process(root.right);
         }
         return Math.min(leftH, rightH) + 1;
     }
-
 
     // TODO: morris遍历的版本,
     // 很难..

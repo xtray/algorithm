@@ -1,9 +1,5 @@
 package LeetCode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Problem_423_OriginalDigits {
 
     public String originalDigits(String target) {

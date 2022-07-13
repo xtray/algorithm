@@ -1,8 +1,6 @@
 package LeetCode;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.Stack;
 
 public class Problem_71_SimplifyPath {
     public String simplifyPath(String path) {

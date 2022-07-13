@@ -2,7 +2,6 @@ package LeetCode;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 public class Problem_519_RandomFlixMatrix {
     private int row;

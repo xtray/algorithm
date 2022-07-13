@@ -3,40 +3,30 @@ package LeetCode;
 public class Problem_1706_FindBall {
 
     public int[] findBall(int[][] grid) {
-        if (grid == null || grid.length == 0 || grid[0] == null || grid[0].length == 0) {
-            return new int[]{};
+        if (grid == null || grid.length == 0 ||
+                grid[0] == null || grid[0].length == 0) {
+            return new int[0];
         }
-        int M = grid.length; // M 行
-        int N = grid[0].length; // N 列, N 个球
-        int[] ans = new int[N];
-
-        for (int j = 0; j < N; j++) {
-            ans[j] = getVal(grid, j);
+        int N = grid.length;
+        int M = grid[0].length;
+        int[] ans = new int[M];
+        for (int col = 0; col < M; col++) { // 检查一行上每一列的小球
+            int i = 0;
+            int j = col;
+            while (i < N) { // 小球从(i,j) --> 去N-1行
+                int jNext = j + grid[i][j]; // 要去的lie
+                // 越界 或者  方向不一致, 不能掉落
+                if (jNext < 0 || jNext >= M || grid[i][j] != grid[i][jNext]) {
+                    ans[col] = -1;
+                    break;
+                }
+                i++;
+                j = jNext;
+            }
+            if (i == N) {
+                ans[col] = j;
+            }
         }
         return ans;
-    }
-
-    // col 列滚到到最底部(共 M 行)的最后结果
-    int getVal(int[][] grid, int col) {
-        int M = grid.length; // M 行
-        int N = grid[0].length; // N 列, N 个球
-        int row = 0;
-        while (row < M) {
-            int neighbour = col + grid[row][col]; // 需要做判断的邻居格子位置
-            // 当前是 \ 需要判断下一个 (+ 1 位置)是不是 相同的 /
-            // 当前是 / 需要判断前一个 (- 1 位置)是不是 相同的 /
-            if (neighbour < 0 || neighbour >= N) { // 越界, 被跟墙夹住了
-                return -1;
-            }
-            // 不相同则夹住了
-            if (grid[row][col] != grid[row][neighbour]) {
-                return -1;
-            }
-            // 否则往下走
-            row++;
-            col = neighbour; // 列上来到 neighbour 的位置
-        }
-        // answer[i] 是球放在顶部的第 i 列后从底部掉出来的那一列对应的下标
-        return col;
     }
 }

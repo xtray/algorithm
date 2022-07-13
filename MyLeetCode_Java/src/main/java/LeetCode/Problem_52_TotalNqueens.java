@@ -1,8 +1,5 @@
 package LeetCode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Problem_52_TotalNqueens {
 
     public int totalNQueens(int n) {

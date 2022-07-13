@@ -2,16 +2,16 @@ package LeetCode;
 
 import java.util.*;
 
-// PENDING: 写的太复杂了, 待优化!!
-
+// IMP: 表达式递归问题, 看课上标准解
 
 public class Problem_726_CountOfAtoms {
 
-    public String countOfAtoms(String formula) {
+    // 自己写的, 太复杂了
+    public String countOfAtoms1(String formula) {
         if (formula == null || formula.length() == 0) {
             return "";
         }
-        Info info = process(formula.toCharArray(), 0);
+        Info1 info = process1(formula.toCharArray(), 0);
         return generateStr(info.map);
     }
 
@@ -35,13 +35,13 @@ public class Problem_726_CountOfAtoms {
     }
 
 
-    public static class Info {
+    public static class Info1 {
         public Map<String, Integer> map;
-        public int index;
+        public int end;
 
-        public Info(Map<String, Integer> map, int i) {
+        public Info1(Map<String, Integer> map, int i) {
             this.map = map;
-            index = i;
+            end = i;
         }
     }
 
@@ -50,7 +50,7 @@ public class Problem_726_CountOfAtoms {
     // 返回 两个值:
     // map: 负责的这一段的结果
     // index: 负责的这一段计算到了哪个位置, 如果) 外有数字, 到数字结束的位置
-    private Info process(char[] str, int i) {
+    private Info1 process1(char[] str, int i) {
         Map<String, Integer> map = new HashMap<>();
         int N = str.length;
         int cur = 0;
@@ -76,9 +76,9 @@ public class Problem_726_CountOfAtoms {
                 cur = 0;
                 sb.setLength(0);
 
-                Info next = process(str, i + 1);
+                Info1 next = process1(str, i + 1);
                 mergeAtomMap(map, next.map);
-                i = next.index + 1;
+                i = next.end + 1;
             }
         }
         cur = cur == 0 ? 1 : cur;
@@ -98,7 +98,7 @@ public class Problem_726_CountOfAtoms {
             i--;
         }
 
-        return new Info(map, i);
+        return new Info1(map, i);
     }
 
     private void mulMap(Map<String, Integer> map, int cur) {
@@ -139,6 +139,91 @@ public class Problem_726_CountOfAtoms {
         map.put(key, map.getOrDefault(key, 0) + cur);
     }
 
+    ////////////////////////////////////////////////////////////////////////////////
+    // NOTE: 以下是课上的标准解
+
+    public String countOfAtoms(String str) {
+        char[] s = str.toCharArray();
+        Info info = process(s, 0);
+        StringBuilder builder = new StringBuilder();
+        for (String key : info.cntMap.keySet()) {
+            builder.append(key);
+            int cnt = info.cntMap.get(key);
+            if (cnt > 1) { // 只有数字大于1的才要append数字
+                builder.append(cnt);
+            }
+        }
+        return builder.toString();
+    }
+
+    public static class Info {
+        public TreeMap<String, Integer> cntMap; // 保证按字母序排序
+        public int end; // 算到哪里结束
+
+        public Info(TreeMap<String, Integer> c, int e) {
+            cntMap = c;
+            end = e;
+        }
+    }
+
+    // IMP: 表达式递归模型
+    public static Info process(char[] s, int i) {
+        TreeMap<String, Integer> cntMap = new TreeMap<>();
+        int cnt = 0;
+        StringBuilder builder = new StringBuilder();
+        Info info = null;
+        // 算到哪里结束:
+        // 1.遇到右括号
+        // 2.遇到字符串结束
+        while (i < s.length && s[i] != ')') {
+            if (s[i] >= 'A' && s[i] <= 'Z' || s[i] == '(') {
+                // 结算上一个原子, 以及上一个原子的翻倍数量值
+                if (builder.length() != 0 || info != null) {
+                    cnt = cnt == 0 ? 1 : cnt;
+                    if (builder.length() != 0) {
+                        String key = builder.toString();
+                        cntMap.put(key, cntMap.getOrDefault(key, 0) + cnt);
+                        builder.setLength(0);
+                    } else {
+                        // 没有累积到原子, 可能是之前是 ) 结束, 需要做map翻倍
+                        for (String key : info.cntMap.keySet()) {
+                            cntMap.put(key, cntMap.getOrDefault(key, 0) + info.cntMap.get(key) * cnt);
+                        }
+                        info = null;
+                    }
+                    cnt = 0;
+                }
+                if (s[i] == '(') {
+                    info = process(s, i + 1);
+                    i = info.end + 1;
+                } else {
+                    // 字母
+                    builder.append(s[i++]);
+                }
+            } else if (s[i] >= 'a' && s[i] <= 'z') {
+                builder.append(s[i++]);
+            } else {
+                cnt = cnt * 10 + s[i++] - '0';
+            }
+        }
+        // 不要忘了最后一个
+        if (builder.length() != 0 || info != null) {
+            cnt = cnt == 0 ? 1 : cnt;
+            if (builder.length() != 0) {
+                String key = builder.toString();
+                cntMap.put(key, cntMap.getOrDefault(key, 0) + cnt);
+                builder.delete(0, builder.length());
+            } else {
+                for (String key : info.cntMap.keySet()) {
+                    cntMap.put(key, cntMap.getOrDefault(key, 0) + info.cntMap.get(key) * cnt);
+                }
+                info = null;
+            }
+            cnt = 0;
+        }
+        return new Info(cntMap, i);
+    }
+
     public static void main(String[] args) {
         // String formula = "H2O";
         // String formula = "Mg(OH)2";
@@ -147,6 +232,5 @@ public class Problem_726_CountOfAtoms {
         var ans = new Problem_726_CountOfAtoms().countOfAtoms(formula);
         System.out.println(ans);
     }
-
 
 }

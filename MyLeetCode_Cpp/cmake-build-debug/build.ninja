@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: LeetCodeCpp2
+# Project: LeetCodeCpp
 # Configurations: Debug
 # =============================================================================
 
@@ -70,6 +70,99 @@ build Problem_397_IntegerReplacement: CXX_EXECUTABLE_LINKER__Problem_397_Integer
   PRE_LINK = :
   TARGET_FILE = Problem_397_IntegerReplacement
   TARGET_PDB = Problem_397_IntegerReplacement.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Array2D
+
+
+#############################################
+# Order-only phony target for Array2D
+
+build cmake_object_order_depends_target_Array2D: phony || CMakeFiles/Array2D.dir
+
+build CMakeFiles/Array2D.dir/_BasicConcept/Array2D.cpp.o: CXX_COMPILER__Array2D_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_BasicConcept/Array2D.cpp || cmake_object_order_depends_target_Array2D
+  DEP_FILE = CMakeFiles/Array2D.dir/_BasicConcept/Array2D.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Array2D.dir
+  OBJECT_FILE_DIR = CMakeFiles/Array2D.dir/_BasicConcept
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Array2D
+
+
+#############################################
+# Link the executable Array2D
+
+build Array2D: CXX_EXECUTABLE_LINKER__Array2D_Debug CMakeFiles/Array2D.dir/_BasicConcept/Array2D.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Array2D.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Array2D
+  TARGET_PDB = Array2D.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target DiffArray
+
+
+#############################################
+# Order-only phony target for DiffArray
+
+build cmake_object_order_depends_target_DiffArray: phony || CMakeFiles/DiffArray.dir
+
+build CMakeFiles/DiffArray.dir/_BasicConcept/DiffArray.cpp.o: CXX_COMPILER__DiffArray_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_BasicConcept/DiffArray.cpp || cmake_object_order_depends_target_DiffArray
+  DEP_FILE = CMakeFiles/DiffArray.dir/_BasicConcept/DiffArray.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/DiffArray.dir
+  OBJECT_FILE_DIR = CMakeFiles/DiffArray.dir/_BasicConcept
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target DiffArray
+
+
+#############################################
+# Link the executable DiffArray
+
+build DiffArray: CXX_EXECUTABLE_LINKER__DiffArray_Debug CMakeFiles/DiffArray.dir/_BasicConcept/DiffArray.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/DiffArray.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = DiffArray
+  TARGET_PDB = DiffArray.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target DiffArray2D
+
+
+#############################################
+# Order-only phony target for DiffArray2D
+
+build cmake_object_order_depends_target_DiffArray2D: phony || CMakeFiles/DiffArray2D.dir
+
+build CMakeFiles/DiffArray2D.dir/_BasicConcept/DiffArray2D.cpp.o: CXX_COMPILER__DiffArray2D_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_BasicConcept/DiffArray2D.cpp || cmake_object_order_depends_target_DiffArray2D
+  DEP_FILE = CMakeFiles/DiffArray2D.dir/_BasicConcept/DiffArray2D.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/DiffArray2D.dir
+  OBJECT_FILE_DIR = CMakeFiles/DiffArray2D.dir/_BasicConcept
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target DiffArray2D
+
+
+#############################################
+# Link the executable DiffArray2D
+
+build DiffArray2D: CXX_EXECUTABLE_LINKER__DiffArray2D_Debug CMakeFiles/DiffArray2D.dir/_BasicConcept/DiffArray2D.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/DiffArray2D.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = DiffArray2D
+  TARGET_PDB = DiffArray2D.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target LN_LvalRval01
@@ -229,7 +322,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/cmake-build-debug
 
-build all: phony Problem_397_IntegerReplacement LN_LvalRval01 LN_LvalRval02 TEST_StringFunc CMakeCXXCompilerId
+build all: phony Problem_397_IntegerReplacement Array2D DiffArray DiffArray2D LN_LvalRval01 LN_LvalRval02 TEST_StringFunc CMakeCXXCompilerId
 
 # =============================================================================
 # Built-in targets

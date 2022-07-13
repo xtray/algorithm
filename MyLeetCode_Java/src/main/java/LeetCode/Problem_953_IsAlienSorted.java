@@ -1,8 +1,5 @@
 package LeetCode;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Problem_953_IsAlienSorted {
 
     public boolean isAlienSorted(String[] words, String order) {

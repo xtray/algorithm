@@ -1,7 +1,5 @@
 package LeetCode;
 
-import java.util.Arrays;
-
 public class Problem_384_Shuffle_An_Array {
 
     public class Solution {

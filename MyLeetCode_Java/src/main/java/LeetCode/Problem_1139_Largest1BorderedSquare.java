@@ -1,9 +1,5 @@
 package LeetCode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Problem_1139_Largest1BorderedSquare {
 
     public static int largest1BorderedSquare(int[][] grid) {

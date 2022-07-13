@@ -1,4 +1,5 @@
 package LeetCode;
+
 // https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/
 
 // IMP: 非常重要的基础题!!!
@@ -58,16 +59,8 @@ public class Problem_188_MaxProfitIV {
         return dp[N - 1][k];
     }
 
-    // 这个解法设定不一样
-    // 就是来到7位置，要在这里卖出
-    // 那买的位置在哪？
-    // 如果允许在7位置买, 那么之前就是0…i
-    // 如果不允许呢？那么之前就是0…i-1
-    // 本来题目是允许的。
-    // 但问题是，允许在7位置买，肯定不会是最优答案
-    // 所以，说无所谓了
-
-    // 从 1开始往后推, 0 作为预备数据的解法, 上面是 1作为预备数据的解法
+    // 斜率优化2
+    // 用dp[0][j] 做准备的解法
     public int maxProfit2(int k, int[] arr) {
         if (arr == null || arr.length == 0) {
             return 0;
@@ -117,4 +110,93 @@ public class Problem_188_MaxProfitIV {
         return ans;
     }
 
+    public int maxProfit11(int k, int[] arr) {
+        if (arr == null || arr.length == 0 || k < 1) {
+            return 0;
+        }
+        int N = arr.length;
+        if (k >= N / 2) { // 等于没有交易次数限制
+            return noTransLimit(arr);
+        }
+        // dp[i][j]: 0~i范围上做不超过j次交易能获得的最大收益
+        int[][] dp = new int[N][k + 1];
+        // 0行-->0, 0列-->0
+        for (int j = 1; j <= k; j++) {
+            for (int i = 1; i < N; i++) {
+                // 可能性划分: i位置参不参与最后一次交易
+                // 可能性1: i位置不参与最后一次交易
+                int p1 = dp[i - 1][j];
+                // 可能性2: i位置参与最后一次交易, i位置一定是卖出时机, 枚举0~i所有位置作为买入时机
+                int p2 = Integer.MIN_VALUE;
+                for (int b = 0; b <= i; b++) {
+                    int cur = dp[b][j - 1] - arr[b] + arr[i];
+                    p2 = Math.max(p2, cur);
+                }
+                dp[i][j] = Math.max(p1, p2);
+            }
+        }
+        return dp[N - 1][k];
+    }
+
+    // 斜率优化
+    // 用dp[1][j] 做准备的解法
+    public int maxProfit22(int k, int[] arr) {
+        if (arr == null || arr.length == 0 || k < 1) {
+            return 0;
+        }
+        int N = arr.length;
+        if (k >= N / 2) { // 等于没有交易次数限制
+            return noTransLimit(arr);
+        }
+        // dp[i][j]: 0~i范围上做j次交易能获得的最大收益
+        int[][] dp = new int[N][k + 1];
+        // 0行-->0, 0列-->0
+        for (int j = 1; j <= k; j++) {
+            // NOTE: 需要提前准备dp[1][j]
+            // int p1 = dp[0][j];
+            // int p2 = dp[1][j - 1] - arr[1] + arr[1];
+            // int p3 = dp[0][j - 1] - arr[0] + arr[1];
+            // dp[1][j] = Math.max(p1, Math.max(p1,p2));
+            int best = Math.max(dp[1][j - 1] - arr[1], dp[0][j - 1] - arr[0]);
+            dp[1][j] = Math.max(dp[0][j], best + arr[1]);
+            for (int i = 2; i < N; i++) {
+                // int p1 = dp[i-1][j];
+                best = Math.max(best, dp[i][j - 1] - arr[i]);
+                dp[i][j] = Math.max(dp[i - 1][j], best + arr[i]);
+            }
+        }
+        return dp[N - 1][k];
+    }
+
+    // 斜率优化2
+    // 用dp[0][j] 做准备的解法
+    public int maxProfit33(int k, int[] arr) {
+        if (arr == null || arr.length == 0 || k < 1) {
+            return 0;
+        }
+        int N = arr.length;
+        if (k >= N / 2) { // 等于没有交易次数限制
+            return noTransLimit(arr);
+        }
+        // dp[i][j]: 0~i范围上做j次交易能获得的最大收益
+        int[][] dp = new int[N][k + 1];
+        // 0行-->0, 0列-->0
+        for (int j = 1; j <= k; j++) {
+            // NOTE: 需要提前准备dp[0][j]
+            // 可能性1: 0位置不参与, 不存在
+            // 可能性2: 0位置参与, 并且是卖出
+            // int p2 = dp[0][j - 1] - arr[0] + arr[0];
+            // dp[0][j] = 0;
+            // 剥离出best
+            // int best = dp[0][j - 1] - arr[0];
+            int best = -arr[0];
+            // dp[0][j] = 0;
+            for (int i = 1; i < N; i++) {
+                // int p1 = dp[i-1][j];
+                best = Math.max(best, dp[i][j - 1] - arr[i]);
+                dp[i][j] = Math.max(dp[i - 1][j], best + arr[i]);
+            }
+        }
+        return dp[N - 1][k];
+    }
 }

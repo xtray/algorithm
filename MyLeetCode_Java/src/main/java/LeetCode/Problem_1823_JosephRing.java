@@ -7,6 +7,7 @@ import java.util.Queue;
 
 public class Problem_1823_JosephRing {
 
+    // 标准的递归的解法
     public int findTheWinner(int n, int k) {
         if (n == 1) {
             return 1;
@@ -14,6 +15,7 @@ public class Problem_1823_JosephRing {
         return (findTheWinner(n - 1, k) + k - 1) % n + 1;
     }
 
+    // NOTE: 改成迭代的办法, 适用于M为不固定的数组的扩展
     public int findTheWinner1(int n, int k) {
         int winner = 1;
         for (int i = 2; i <= n; i++) {
@@ -31,8 +33,8 @@ public class Problem_1823_JosephRing {
         for (int i = 1; i <= n; i++) {
             queue.offer(i); // 存储最初的老的编号
         }
-        while (queue.size() > 1) {
-            for (int i = 1; i < k; i++) {
+        while (queue.size() > 1) { // 剩一个人停止
+            for (int i = 1; i < k; i++) { // 类似BFS按层size遍历的做法
                 queue.offer(queue.poll()); // 最初的老的编号一直不变, 用队列维持顺序
             }
             queue.poll(); // i == k, 杀掉的人

@@ -1,8 +1,6 @@
 package LeetCode.Jianzhi;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 public class Problem_JZII045_BottomLevelValue {
 

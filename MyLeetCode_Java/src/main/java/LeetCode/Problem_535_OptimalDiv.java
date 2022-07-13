@@ -1,7 +1,5 @@
 package LeetCode;
 
-import java.util.Arrays;
-
 public class Problem_535_OptimalDiv {
     public String optimalDivision(int[] nums) {
         if (nums == null || nums.length <= 1) {

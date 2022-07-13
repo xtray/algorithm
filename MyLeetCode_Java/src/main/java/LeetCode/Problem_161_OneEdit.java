@@ -1,5 +1,7 @@
 package LeetCode;
 
+// NOTE: 回看!!
+
 public class Problem_161_OneEdit {
 
     public boolean isOneEditDistance1(String s, String t) {
@@ -51,9 +53,6 @@ public class Problem_161_OneEdit {
         if (N > M) {
             return isOneEditDistance(b, a);
         }
-        if (N == 0 && M == 1) {
-            return true;
-        }
         char[] str1 = a.toCharArray();
         char[] str2 = b.toCharArray();
         int i = 0;
@@ -74,7 +73,7 @@ public class Problem_161_OneEdit {
                 cnt++;
             }
         }
-        // 如果cnt == 0, 可能a,b相等, 或者a,b差一个字符, 要去掉相等的情况
+        // 如果cnt == 0, 可能a,b等长且相等(false), 或者a,b一路相等长度差1(true)
         return cnt == 0 ? N != M : cnt == 1;
     }
 
