@@ -1,12 +1,21 @@
-package LeetCode.MSJD.EASY;
+package LeetCode.JZOffer;
 
-public class Problem_206_ReverseList {
+public class Problem_JZII024_ReverseList {
+
     public static class ListNode {
         int val;
         ListNode next;
 
-        ListNode(int x) {
-            val = x;
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
         }
     }
 
