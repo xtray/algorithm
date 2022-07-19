@@ -7,7 +7,7 @@ public class DynamicSegmentTree_02 {
 
 	public static class Node {
 		public int sum;
-		public int lazy;
+		public int lazy; // 累加和的懒信息
 		public int change;
 		public boolean update;
 		public Node left;

@@ -3,6 +3,7 @@ package _aTemplate;
 // 只支持单点增加 + 范围查询的动态开点线段树（累加和）
 public class DynamicSegmentTree_01 {
 
+	// 节点所代表的范围是外部信息提供的, 节点内部并没有保存
 	public static class Node {
 		public int sum;
 		public Node left;
@@ -12,8 +13,8 @@ public class DynamicSegmentTree_01 {
 	// arr[0] -> 1
 	// 线段树，从1开始下标!
 	public static class DynamicSegmentTree {
-		public Node root;
-		public int size;
+		public Node root; // 头结点
+		public int size; // 头结点号称的范围 1~size
 
 		public DynamicSegmentTree(int max) {
 			root = new Node();
@@ -22,7 +23,7 @@ public class DynamicSegmentTree_01 {
 
 		// 下标i这个位置的数，增加v
 		public void add(int i, int v) {
-			add(root, 1, size, i, v);
+			add(root, 1, size, i, v); // 调用内部的add方法
 		}
 
 		// c-> cur 当前节点！表达的范围 l~r
@@ -34,7 +35,7 @@ public class DynamicSegmentTree_01 {
 			} else { // l~r 还可以划分
 				int mid = (l + r) / 2;
 				if (i <= mid) { // l ~ mid
-					if (c.left == null) {
+					if (c.left == null) { // 如果没有就开新点
 						c.left = new Node();
 					}
 					add(c.left, l, mid, i, v);
