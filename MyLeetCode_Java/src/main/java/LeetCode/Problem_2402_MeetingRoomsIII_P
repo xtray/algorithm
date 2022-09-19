@@ -1,0 +1,63 @@
+// package _Contest.LC.W309;
+// PRIORITY
+// import java.util.Arrays;
+// import java.util.PriorityQueue;
+//
+// public class Problem_D {
+//
+//     public int mostBooked(int n, int[][] meetings) {
+//         int N = meetings.length;
+//         int[][] event = new int[N * 2][5];
+//         // [类型, 结束时间, 时间, 会议时长, 占用会议编号]
+//         int[] cnt = new int[n]; // 会议室词频统计
+//         int idx = 0;
+//         for (int[] m : meetings) {
+//             int start = m[0];
+//             int end = m[1] - 1;
+//             int interval = m[1] - m[0];
+//             event[idx][0] = 0; // 类型, 0开始, 1结束
+//             event[idx][1] = end; // 结束
+//             event[idx][2] = start; // 时间
+//             event[idx][3] = interval; // 时长
+//             event[idx][4] = -1; // 会议室编号
+//
+//             event[idx + N][0] = 1; // 类型, 0开始, 1结束
+//             event[idx + N][1] = end; //
+//             event[idx + N][2] = end; //
+//             event[idx + N][3] = interval; //
+//             event[idx + N][4] = -1; //
+//         }
+//         Arrays.sort(event, (o1, o2) -> o1[2] - o2[2]);
+//         PriorityQueue<int[]> pq = new PriorityQueue<>((o1, o2) -> o1[2] - o2[2]);
+//         PriorityQueue<Integer> roomPq = new PriorityQueue<>();
+//         int mCnt = 0;
+//         for (int i = 0; i < 2 * N; i++) {
+//             int[] curEvent = event[i];
+//             int type = curEvent[0];
+//             if (type == 0) { // 开始事件
+//                 // 当前会议开始时间 <= 之前的结束时间
+//                 if (pq.isEmpty() || curEvent[2] <= pq.peek()[2]) {
+//
+//                     if (mCnt + 1 < n) { // 新开会议室
+//                         mCnt++;
+//                         cnt[mCnt]++;
+//                     } else { // 会议室不够用
+//                         // 从优先队列弹出顶部
+//                         int[] top = pq.poll();
+//                         int interval = top[3];
+//                         int room = top[4];
+//                         cnt[room]++;
+//                         int[] newEvent = new int[]{1, curEvent[2] + interval, curEvent[2] + interval, room};
+//                         pq.add(newEvent);
+//                     }
+//                 }
+//
+//             } else {
+//                 // 结束
+//
+//
+//             }
+//         }
+//
+//     }
+// }

@@ -9,9 +9,9 @@ public class Problem_1109_CorporateFlightBookings {
         if (bookings == null || bookings.length == 0 || bookings[0] == null || bookings[0].length == 0) {
             return ans;
         }
-        int[] diff = new int[n + 1];
+        int[] diff = new int[n + 1]; // 使用0位置
         for (int[] bo : bookings) {
-            int L = bo[0] - 1;
+            int L = bo[0] - 1; // 数据从1开始
             int R = bo[1] - 1;
             int V = bo[2];
             diff[L] += V;
@@ -24,7 +24,6 @@ public class Problem_1109_CorporateFlightBookings {
         return ans;
     }
 
-    // 差分
     public int[] corpFlightBookings(int[][] bookings, int n) {
         int[] ans = new int[n];
         if (bookings == null || bookings.length == 0 || bookings[0] == null || bookings[0].length == 0) {

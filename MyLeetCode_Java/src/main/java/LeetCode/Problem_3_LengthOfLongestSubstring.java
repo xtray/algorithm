@@ -58,8 +58,32 @@ public class Problem_3_LengthOfLongestSubstring {
         return ans;
     }
 
-    // 不定长滑动窗口解法
+    // 滑动窗口: 存储字符上次出现位置
     public int lengthOfLongestSubstring2(String s) {
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+        char[] str = s.toCharArray();
+        int N = str.length;
+        int ans = 0;
+        int L = 0;
+        int R = 0;
+        // [字符, 上次出现位置]
+        Map<Character, Integer> map = new HashMap<>();
+        while (R < N) {
+            if (map.containsKey(str[R])) {
+                // 当前字符上次出现的位置, 跟当前结算的开始位置
+                L = Math.max(L, map.get(str[R]) + 1);
+            }
+            ans = Math.max(ans, R - L + 1);
+            map.put(str[R], R);
+            R++;
+        }
+        return ans;
+    }
+
+    // 滑动窗口: 存储字符出现次数
+    public int lengthOfLongestSubstring3(String s) {
         if (s == null || s.length() == 0) {
             return 0;
         }
@@ -68,10 +92,11 @@ public class Problem_3_LengthOfLongestSubstring {
         int L = 0;
         int R = 0;
         int ans = 0;
+        // [字符, 出现次数]
         Map<Character, Integer> map = new HashMap<>();
         while (R < N) {
             map.put(str[R], map.getOrDefault(str[R], 0) + 1);
-            while (map.get(str[R]) > 1) {
+            while (map.get(str[R]) > 1) { // 保证都是1次
                 map.put(str[L], map.get(str[L]) - 1);
                 L++;
             }
@@ -79,5 +104,19 @@ public class Problem_3_LengthOfLongestSubstring {
             R++;
         }
         return ans;
+    }
+
+
+    public static void main(String[] args) {
+        // String s = "an++--viaj"; // 5
+        String s = "tmmzuxt"; // 5
+        var ans = new Problem_3_LengthOfLongestSubstring().lengthOfLongestSubstring(s);
+        System.out.println(ans);
+
+        var ans1 = new Problem_3_LengthOfLongestSubstring().lengthOfLongestSubstring1(s);
+        System.out.println(ans1);
+
+        var ans2 = new Problem_3_LengthOfLongestSubstring().lengthOfLongestSubstring2(s);
+        System.out.println(ans2);
     }
 }

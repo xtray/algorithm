@@ -22,7 +22,7 @@ public class Problem_535_TinyURL {
                     str[i] = codes.charAt(idx);
                 }
                 String url = prefix + String.valueOf(str);
-                if(!longToTiny.containsKey(url)) {
+                if(!tinyToLong.containsKey(url)) {
                     longToTiny.put(longUrl, url);
                     tinyToLong.put(url, longUrl);
                     break;

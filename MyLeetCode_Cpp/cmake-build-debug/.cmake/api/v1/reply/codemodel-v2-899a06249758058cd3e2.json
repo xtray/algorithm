@@ -1,0 +1,159 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LeetCodeCpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CMakeCXXCompilerId::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CMakeCXXCompilerId-Debug-80a222df97fe2ee6bfe7.json",
+					"name" : "CMakeCXXCompilerId",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DiffArray::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DiffArray-Debug-ff9aafa96e8c8dd0dabc.json",
+					"name" : "DiffArray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DiffArray2D::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DiffArray2D-Debug-12bdf625692520b0b80e.json",
+					"name" : "DiffArray2D",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LN_LvalRval01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LN_LvalRval01-Debug-60f393a45be4fa48b4d3.json",
+					"name" : "LN_LvalRval01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LN_LvalRval02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LN_LvalRval02-Debug-ee15d73d0c3fd17dd3e9.json",
+					"name" : "LN_LvalRval02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Problem_397_IntegerReplacement::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Problem_397_IntegerReplacement-Debug-36bf0d267c9e205f2210.json",
+					"name" : "Problem_397_IntegerReplacement",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Problem_AutoX01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Problem_AutoX01-Debug-b7f792842933d94447ba.json",
+					"name" : "Problem_AutoX01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Problem_AutoX02::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Problem_AutoX02-Debug-381cbb8ded5a369093a6.json",
+					"name" : "Problem_AutoX02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Problem_AutoX03::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Problem_AutoX03-Debug-d882c3d0422557696ad9.json",
+					"name" : "Problem_AutoX03",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TEST_StringFunc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TEST_StringFunc-Debug-929d426d499b17114d99.json",
+					"name" : "TEST_StringFunc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TestMove::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TestMove-Debug-b62a35630792222821d3.json",
+					"name" : "TestMove",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "enumerate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-enumerate-Debug-8eac123983a7a7d64658.json",
+					"name" : "enumerate",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/cmake-build-debug",
+		"source" : "/Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -17,7 +17,7 @@ public class Problem_1_TwoSum {
         for (int i = 0; i < N; i++) {
             int x = target - nums[i];
             if (map.containsKey(x)) {
-                return new int[]{i, map.get(x)};
+                return new int[]{map.get(x), i};
             }
             map.put(nums[i], i);
         }
@@ -25,6 +25,7 @@ public class Problem_1_TwoSum {
     }
 
     // IMP: twosum拓展, 使用双指针的解法, 重要!!
+    // nums数组是有序的
     // nums[start...end]范围上, 有多少个不同二元组, 相加和==target, 全返回
     // {-1, 5} k= 4
     // {1, 3}

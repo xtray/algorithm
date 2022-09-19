@@ -47,7 +47,7 @@ public class Problem_239_SlidingWindowMax {
                 qmax.pollLast();
             }
             qmax.addLast(i);
-            // 2. 改出的出
+            // 2. 该出的出
             if (qmax.peekFirst() == i - k) { // 上一步刚加入数, 不可能为空
                 qmax.pollFirst();
             }

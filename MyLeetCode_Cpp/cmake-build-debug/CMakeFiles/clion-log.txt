@@ -1,11 +1,15 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp -B /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/cmake-build-debug
     -- src/Problem_397_IntegerReplacement.cpp will be compiled to bin/Problem_397_IntegerReplacement
-    -- src/Array2D.cpp will be compiled to bin/Array2D
     -- src/DiffArray.cpp will be compiled to bin/DiffArray
     -- src/DiffArray2D.cpp will be compiled to bin/DiffArray2D
     -- src/LN_LvalRval01.cpp will be compiled to bin/LN_LvalRval01
     -- src/LN_LvalRval02.cpp will be compiled to bin/LN_LvalRval02
+    -- src/Problem_AutoX01.cpp will be compiled to bin/Problem_AutoX01
+    -- src/Problem_AutoX02.cpp will be compiled to bin/Problem_AutoX02
+    -- src/Problem_AutoX03.cpp will be compiled to bin/Problem_AutoX03
     -- src/TEST_StringFunc.cpp will be compiled to bin/TEST_StringFunc
+    -- src/TestMove.cpp will be compiled to bin/TestMove
+    -- src/enumerate.cpp will be compiled to bin/enumerate
     -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
 -- Configuring done
 -- Generating done

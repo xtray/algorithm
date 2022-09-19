@@ -22,7 +22,7 @@ public class Problem_200_IslandNum {
         return ans;
     }
 
-    private static final int[] dirs = new int[]{0, -1, 0, 1, -1, 0, 1, 0};
+    private static final int[] dirs = new int[]{0, -1, 0, 1, 0};
 
     private void infect(char[][] grid, int i, int j) {
         int N = grid.length;
@@ -31,9 +31,9 @@ public class Problem_200_IslandNum {
             return;
         }
         grid[i][j] = '0';
-        for (int k = 0; k < dirs.length; k += 2) {
-            int x = i + dirs[k];
-            int y = j + dirs[k + 1];
+        for (int k = 1; k < dirs.length; k++) {
+            int x = i + dirs[k - 1];
+            int y = j + dirs[k];
             infect(grid, x, y);
         }
     }

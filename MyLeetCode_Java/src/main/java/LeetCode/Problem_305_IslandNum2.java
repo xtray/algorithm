@@ -20,7 +20,7 @@ public class Problem_305_IslandNum2 {
         return ans;
     }
 
-    private static final int[] dirs = new int[]{0, -1, 0, 1, -1, 0, 1, 0};
+    private static final int[] dirs = new int[]{0, -1, 0, 1, 0};
 
     public static class UnionFind {
         // parent[i] = k ： i的父亲是k
@@ -96,9 +96,9 @@ public class Problem_305_IslandNum2 {
                 size[idx] = 1;
                 setSize++;
                 // 上下左右四个方向尝试合并
-                for (int k = 0; k < dirs.length; k += 2) {
-                    int nx = i + dirs[k];
-                    int ny = j + dirs[k + 1];
+                for (int k = 1; k < dirs.length; k++) {
+                    int nx = i + dirs[k - 1];
+                    int ny = j + dirs[k];
                     union(i, j, nx, ny);
                 }
             }

@@ -18,19 +18,21 @@ public class Problem_31_NextPermutation {
         }
         if (firstLess < 0) { // 从右往左一直升序, 此时就是最大
             reverse(nums, 0, N - 1);
-        } else {
-            int rightBig = -1; // firstLess存在, 则 rightBig 必然存在
-            // 找最靠右的、同时比nums[firstLess]大的数，位置在哪
-            // 这里其实也可以用二分优化，但是这种优化无关紧要了
-            for (int i = N - 1; i > firstLess; i--) {
-                if (nums[i] > nums[firstLess]) {
-                    rightBig = i;
-                    break;
-                }
-            }
-            swap(nums, firstLess, rightBig);
-            reverse(nums, firstLess + 1, N - 1);
+            return;
         }
+
+        int rightBig = -1; // firstLess存在, 则 rightBig 必然存在
+        // 找最靠右的、同时比nums[firstLess]大的数，位置在哪
+        // 这里其实也可以用二分优化，但是这种优化无关紧要了
+        for (int i = N - 1; i > firstLess; i--) {
+            if (nums[i] > nums[firstLess]) {
+                rightBig = i;
+                break;
+            }
+        }
+        swap(nums, firstLess, rightBig);
+        reverse(nums, firstLess + 1, N - 1);
+
     }
 
     public static void reverse(int[] nums, int L, int R) {

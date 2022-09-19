@@ -3,8 +3,11 @@ package LeetCode;
 public class Problem_13_RomanToInt {
 
     public static int romanToInt(String s) {
-        // C     M     X   C     I   X
-        // 100  1000  10   100   1   10
+        // I  V  X  L  C   D   M
+        // 1  5  10 50 100 500 1000
+        // 当前比下一个小就表示负数
+        // 当前如果大于等于下一个就表示正数
+        // 每一位出一个数, 累加起来就是答案
         int[] nums = new int[s.length()];
         for (int i = 0; i < s.length(); i++) {
             switch (s.charAt(i)) {

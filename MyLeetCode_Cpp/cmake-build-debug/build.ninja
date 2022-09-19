@@ -72,37 +72,6 @@ build Problem_397_IntegerReplacement: CXX_EXECUTABLE_LINKER__Problem_397_Integer
   TARGET_PDB = Problem_397_IntegerReplacement.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target Array2D
-
-
-#############################################
-# Order-only phony target for Array2D
-
-build cmake_object_order_depends_target_Array2D: phony || CMakeFiles/Array2D.dir
-
-build CMakeFiles/Array2D.dir/_BasicConcept/Array2D.cpp.o: CXX_COMPILER__Array2D_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_BasicConcept/Array2D.cpp || cmake_object_order_depends_target_Array2D
-  DEP_FILE = CMakeFiles/Array2D.dir/_BasicConcept/Array2D.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/Array2D.dir
-  OBJECT_FILE_DIR = CMakeFiles/Array2D.dir/_BasicConcept
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Array2D
-
-
-#############################################
-# Link the executable Array2D
-
-build Array2D: CXX_EXECUTABLE_LINKER__Array2D_Debug CMakeFiles/Array2D.dir/_BasicConcept/Array2D.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
-  OBJECT_DIR = CMakeFiles/Array2D.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = Array2D
-  TARGET_PDB = Array2D.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target DiffArray
 
 
@@ -227,6 +196,99 @@ build LN_LvalRval02: CXX_EXECUTABLE_LINKER__LN_LvalRval02_Debug CMakeFiles/LN_Lv
   TARGET_PDB = LN_LvalRval02.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target Problem_AutoX01
+
+
+#############################################
+# Order-only phony target for Problem_AutoX01
+
+build cmake_object_order_depends_target_Problem_AutoX01: phony || CMakeFiles/Problem_AutoX01.dir
+
+build CMakeFiles/Problem_AutoX01.dir/_Contest/AutoX/Problem_AutoX01.cpp.o: CXX_COMPILER__Problem_AutoX01_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_Contest/AutoX/Problem_AutoX01.cpp || cmake_object_order_depends_target_Problem_AutoX01
+  DEP_FILE = CMakeFiles/Problem_AutoX01.dir/_Contest/AutoX/Problem_AutoX01.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_AutoX01.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_AutoX01.dir/_Contest/AutoX
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_AutoX01
+
+
+#############################################
+# Link the executable Problem_AutoX01
+
+build Problem_AutoX01: CXX_EXECUTABLE_LINKER__Problem_AutoX01_Debug CMakeFiles/Problem_AutoX01.dir/_Contest/AutoX/Problem_AutoX01.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_AutoX01.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_AutoX01
+  TARGET_PDB = Problem_AutoX01.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_AutoX02
+
+
+#############################################
+# Order-only phony target for Problem_AutoX02
+
+build cmake_object_order_depends_target_Problem_AutoX02: phony || CMakeFiles/Problem_AutoX02.dir
+
+build CMakeFiles/Problem_AutoX02.dir/_Contest/AutoX/Problem_AutoX02.cpp.o: CXX_COMPILER__Problem_AutoX02_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_Contest/AutoX/Problem_AutoX02.cpp || cmake_object_order_depends_target_Problem_AutoX02
+  DEP_FILE = CMakeFiles/Problem_AutoX02.dir/_Contest/AutoX/Problem_AutoX02.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_AutoX02.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_AutoX02.dir/_Contest/AutoX
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_AutoX02
+
+
+#############################################
+# Link the executable Problem_AutoX02
+
+build Problem_AutoX02: CXX_EXECUTABLE_LINKER__Problem_AutoX02_Debug CMakeFiles/Problem_AutoX02.dir/_Contest/AutoX/Problem_AutoX02.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_AutoX02.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_AutoX02
+  TARGET_PDB = Problem_AutoX02.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_AutoX03
+
+
+#############################################
+# Order-only phony target for Problem_AutoX03
+
+build cmake_object_order_depends_target_Problem_AutoX03: phony || CMakeFiles/Problem_AutoX03.dir
+
+build CMakeFiles/Problem_AutoX03.dir/_Contest/AutoX/Problem_AutoX03.cpp.o: CXX_COMPILER__Problem_AutoX03_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_Contest/AutoX/Problem_AutoX03.cpp || cmake_object_order_depends_target_Problem_AutoX03
+  DEP_FILE = CMakeFiles/Problem_AutoX03.dir/_Contest/AutoX/Problem_AutoX03.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_AutoX03.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_AutoX03.dir/_Contest/AutoX
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_AutoX03
+
+
+#############################################
+# Link the executable Problem_AutoX03
+
+build Problem_AutoX03: CXX_EXECUTABLE_LINKER__Problem_AutoX03_Debug CMakeFiles/Problem_AutoX03.dir/_Contest/AutoX/Problem_AutoX03.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_AutoX03.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_AutoX03
+  TARGET_PDB = Problem_AutoX03.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target TEST_StringFunc
 
 
@@ -256,6 +318,68 @@ build TEST_StringFunc: CXX_EXECUTABLE_LINKER__TEST_StringFunc_Debug CMakeFiles/T
   PRE_LINK = :
   TARGET_FILE = TEST_StringFunc
   TARGET_PDB = TEST_StringFunc.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target TestMove
+
+
+#############################################
+# Order-only phony target for TestMove
+
+build cmake_object_order_depends_target_TestMove: phony || CMakeFiles/TestMove.dir
+
+build CMakeFiles/TestMove.dir/_Test/TestMove.cpp.o: CXX_COMPILER__TestMove_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_Test/TestMove.cpp || cmake_object_order_depends_target_TestMove
+  DEP_FILE = CMakeFiles/TestMove.dir/_Test/TestMove.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/TestMove.dir
+  OBJECT_FILE_DIR = CMakeFiles/TestMove.dir/_Test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target TestMove
+
+
+#############################################
+# Link the executable TestMove
+
+build TestMove: CXX_EXECUTABLE_LINKER__TestMove_Debug CMakeFiles/TestMove.dir/_Test/TestMove.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/TestMove.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = TestMove
+  TARGET_PDB = TestMove.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target enumerate
+
+
+#############################################
+# Order-only phony target for enumerate
+
+build cmake_object_order_depends_target_enumerate: phony || CMakeFiles/enumerate.dir
+
+build CMakeFiles/enumerate.dir/_aTemplate/enumerate.cpp.o: CXX_COMPILER__enumerate_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_aTemplate/enumerate.cpp || cmake_object_order_depends_target_enumerate
+  DEP_FILE = CMakeFiles/enumerate.dir/_aTemplate/enumerate.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/enumerate.dir
+  OBJECT_FILE_DIR = CMakeFiles/enumerate.dir/_aTemplate
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target enumerate
+
+
+#############################################
+# Link the executable enumerate
+
+build enumerate: CXX_EXECUTABLE_LINKER__enumerate_Debug CMakeFiles/enumerate.dir/_aTemplate/enumerate.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/enumerate.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = enumerate
+  TARGET_PDB = enumerate.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target CMakeCXXCompilerId
@@ -322,7 +446,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/cmake-build-debug
 
-build all: phony Problem_397_IntegerReplacement Array2D DiffArray DiffArray2D LN_LvalRval01 LN_LvalRval02 TEST_StringFunc CMakeCXXCompilerId
+build all: phony Problem_397_IntegerReplacement DiffArray DiffArray2D LN_LvalRval01 LN_LvalRval02 Problem_AutoX01 Problem_AutoX02 Problem_AutoX03 TEST_StringFunc TestMove enumerate CMakeCXXCompilerId
 
 # =============================================================================
 # Built-in targets

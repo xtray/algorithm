@@ -11,6 +11,7 @@ public class Problem_440_KthSmallestInLexicographicalOrder {
 
     public static int[] offset = {0, 1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
 
+    // 以x开头一共只有1,2...位的数有多少个
     public static int[] number = {0, 1, 11, 111, 1111, 11111, 111111, 1111111, 11111111, 111111111, 1111111111};
 
     // 分区间讨论
