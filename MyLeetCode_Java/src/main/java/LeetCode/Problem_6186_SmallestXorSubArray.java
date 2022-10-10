@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+// ref: https://leetcode.cn/problems/smallest-subarrays-with-maximum-bitwise-or/
+
 public class Problem_6186_SmallestXorSubArray {
 
     public static class TrieNode {

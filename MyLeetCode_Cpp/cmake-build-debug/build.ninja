@@ -41,6 +41,223 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target Problem_1313_DecompRLEList
+
+
+#############################################
+# Order-only phony target for Problem_1313_DecompRLEList
+
+build cmake_object_order_depends_target_Problem_1313_DecompRLEList: phony || CMakeFiles/Problem_1313_DecompRLEList.dir
+
+build CMakeFiles/Problem_1313_DecompRLEList.dir/LeetCode/Problem_1313_DecompRLEList.cpp.o: CXX_COMPILER__Problem_1313_DecompRLEList_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_1313_DecompRLEList.cpp || cmake_object_order_depends_target_Problem_1313_DecompRLEList
+  DEP_FILE = CMakeFiles/Problem_1313_DecompRLEList.dir/LeetCode/Problem_1313_DecompRLEList.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_1313_DecompRLEList.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_1313_DecompRLEList.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_1313_DecompRLEList
+
+
+#############################################
+# Link the executable Problem_1313_DecompRLEList
+
+build Problem_1313_DecompRLEList: CXX_EXECUTABLE_LINKER__Problem_1313_DecompRLEList_Debug CMakeFiles/Problem_1313_DecompRLEList.dir/LeetCode/Problem_1313_DecompRLEList.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_1313_DecompRLEList.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_1313_DecompRLEList
+  TARGET_PDB = Problem_1313_DecompRLEList.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_1694_ReformatNumber
+
+
+#############################################
+# Order-only phony target for Problem_1694_ReformatNumber
+
+build cmake_object_order_depends_target_Problem_1694_ReformatNumber: phony || CMakeFiles/Problem_1694_ReformatNumber.dir
+
+build CMakeFiles/Problem_1694_ReformatNumber.dir/LeetCode/Problem_1694_ReformatNumber.cpp.o: CXX_COMPILER__Problem_1694_ReformatNumber_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_1694_ReformatNumber.cpp || cmake_object_order_depends_target_Problem_1694_ReformatNumber
+  DEP_FILE = CMakeFiles/Problem_1694_ReformatNumber.dir/LeetCode/Problem_1694_ReformatNumber.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_1694_ReformatNumber.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_1694_ReformatNumber.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_1694_ReformatNumber
+
+
+#############################################
+# Link the executable Problem_1694_ReformatNumber
+
+build Problem_1694_ReformatNumber: CXX_EXECUTABLE_LINKER__Problem_1694_ReformatNumber_Debug CMakeFiles/Problem_1694_ReformatNumber.dir/LeetCode/Problem_1694_ReformatNumber.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_1694_ReformatNumber.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_1694_ReformatNumber
+  TARGET_PDB = Problem_1694_ReformatNumber.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_1800_MaxAscendSum
+
+
+#############################################
+# Order-only phony target for Problem_1800_MaxAscendSum
+
+build cmake_object_order_depends_target_Problem_1800_MaxAscendSum: phony || CMakeFiles/Problem_1800_MaxAscendSum.dir
+
+build CMakeFiles/Problem_1800_MaxAscendSum.dir/LeetCode/Problem_1800_MaxAscendSum.cpp.o: CXX_COMPILER__Problem_1800_MaxAscendSum_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_1800_MaxAscendSum.cpp || cmake_object_order_depends_target_Problem_1800_MaxAscendSum
+  DEP_FILE = CMakeFiles/Problem_1800_MaxAscendSum.dir/LeetCode/Problem_1800_MaxAscendSum.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_1800_MaxAscendSum.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_1800_MaxAscendSum.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_1800_MaxAscendSum
+
+
+#############################################
+# Link the executable Problem_1800_MaxAscendSum
+
+build Problem_1800_MaxAscendSum: CXX_EXECUTABLE_LINKER__Problem_1800_MaxAscendSum_Debug CMakeFiles/Problem_1800_MaxAscendSum.dir/LeetCode/Problem_1800_MaxAscendSum.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_1800_MaxAscendSum.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_1800_MaxAscendSum
+  TARGET_PDB = Problem_1800_MaxAscendSum.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_2068_AlmostEqual
+
+
+#############################################
+# Order-only phony target for Problem_2068_AlmostEqual
+
+build cmake_object_order_depends_target_Problem_2068_AlmostEqual: phony || CMakeFiles/Problem_2068_AlmostEqual.dir
+
+build CMakeFiles/Problem_2068_AlmostEqual.dir/LeetCode/Problem_2068_AlmostEqual.cpp.o: CXX_COMPILER__Problem_2068_AlmostEqual_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_2068_AlmostEqual.cpp || cmake_object_order_depends_target_Problem_2068_AlmostEqual
+  DEP_FILE = CMakeFiles/Problem_2068_AlmostEqual.dir/LeetCode/Problem_2068_AlmostEqual.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_2068_AlmostEqual.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_2068_AlmostEqual.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_2068_AlmostEqual
+
+
+#############################################
+# Link the executable Problem_2068_AlmostEqual
+
+build Problem_2068_AlmostEqual: CXX_EXECUTABLE_LINKER__Problem_2068_AlmostEqual_Debug CMakeFiles/Problem_2068_AlmostEqual.dir/LeetCode/Problem_2068_AlmostEqual.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_2068_AlmostEqual.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_2068_AlmostEqual
+  TARGET_PDB = Problem_2068_AlmostEqual.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_2119_TwoTimeReverse
+
+
+#############################################
+# Order-only phony target for Problem_2119_TwoTimeReverse
+
+build cmake_object_order_depends_target_Problem_2119_TwoTimeReverse: phony || CMakeFiles/Problem_2119_TwoTimeReverse.dir
+
+build CMakeFiles/Problem_2119_TwoTimeReverse.dir/LeetCode/Problem_2119_TwoTimeReverse.cpp.o: CXX_COMPILER__Problem_2119_TwoTimeReverse_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_2119_TwoTimeReverse.cpp || cmake_object_order_depends_target_Problem_2119_TwoTimeReverse
+  DEP_FILE = CMakeFiles/Problem_2119_TwoTimeReverse.dir/LeetCode/Problem_2119_TwoTimeReverse.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_2119_TwoTimeReverse.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_2119_TwoTimeReverse.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_2119_TwoTimeReverse
+
+
+#############################################
+# Link the executable Problem_2119_TwoTimeReverse
+
+build Problem_2119_TwoTimeReverse: CXX_EXECUTABLE_LINKER__Problem_2119_TwoTimeReverse_Debug CMakeFiles/Problem_2119_TwoTimeReverse.dir/LeetCode/Problem_2119_TwoTimeReverse.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_2119_TwoTimeReverse.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_2119_TwoTimeReverse
+  TARGET_PDB = Problem_2119_TwoTimeReverse.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_31_NextPermutation
+
+
+#############################################
+# Order-only phony target for Problem_31_NextPermutation
+
+build cmake_object_order_depends_target_Problem_31_NextPermutation: phony || CMakeFiles/Problem_31_NextPermutation.dir
+
+build CMakeFiles/Problem_31_NextPermutation.dir/LeetCode/Problem_31_NextPermutation.cpp.o: CXX_COMPILER__Problem_31_NextPermutation_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_31_NextPermutation.cpp || cmake_object_order_depends_target_Problem_31_NextPermutation
+  DEP_FILE = CMakeFiles/Problem_31_NextPermutation.dir/LeetCode/Problem_31_NextPermutation.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_31_NextPermutation.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_31_NextPermutation.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_31_NextPermutation
+
+
+#############################################
+# Link the executable Problem_31_NextPermutation
+
+build Problem_31_NextPermutation: CXX_EXECUTABLE_LINKER__Problem_31_NextPermutation_Debug CMakeFiles/Problem_31_NextPermutation.dir/LeetCode/Problem_31_NextPermutation.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_31_NextPermutation.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_31_NextPermutation
+  TARGET_PDB = Problem_31_NextPermutation.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_327_RangeSum
+
+
+#############################################
+# Order-only phony target for Problem_327_RangeSum
+
+build cmake_object_order_depends_target_Problem_327_RangeSum: phony || CMakeFiles/Problem_327_RangeSum.dir
+
+build CMakeFiles/Problem_327_RangeSum.dir/LeetCode/Problem_327_RangeSum.cpp.o: CXX_COMPILER__Problem_327_RangeSum_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_327_RangeSum.cpp || cmake_object_order_depends_target_Problem_327_RangeSum
+  DEP_FILE = CMakeFiles/Problem_327_RangeSum.dir/LeetCode/Problem_327_RangeSum.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_327_RangeSum.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_327_RangeSum.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_327_RangeSum
+
+
+#############################################
+# Link the executable Problem_327_RangeSum
+
+build Problem_327_RangeSum: CXX_EXECUTABLE_LINKER__Problem_327_RangeSum_Debug CMakeFiles/Problem_327_RangeSum.dir/LeetCode/Problem_327_RangeSum.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_327_RangeSum.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_327_RangeSum
+  TARGET_PDB = Problem_327_RangeSum.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Problem_397_IntegerReplacement
 
 
@@ -70,6 +287,285 @@ build Problem_397_IntegerReplacement: CXX_EXECUTABLE_LINKER__Problem_397_Integer
   PRE_LINK = :
   TARGET_FILE = Problem_397_IntegerReplacement
   TARGET_PDB = Problem_397_IntegerReplacement.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_581_MInSubArray
+
+
+#############################################
+# Order-only phony target for Problem_581_MInSubArray
+
+build cmake_object_order_depends_target_Problem_581_MInSubArray: phony || CMakeFiles/Problem_581_MInSubArray.dir
+
+build CMakeFiles/Problem_581_MInSubArray.dir/LeetCode/Problem_581_MInSubArray.cpp.o: CXX_COMPILER__Problem_581_MInSubArray_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_581_MInSubArray.cpp || cmake_object_order_depends_target_Problem_581_MInSubArray
+  DEP_FILE = CMakeFiles/Problem_581_MInSubArray.dir/LeetCode/Problem_581_MInSubArray.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_581_MInSubArray.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_581_MInSubArray.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_581_MInSubArray
+
+
+#############################################
+# Link the executable Problem_581_MInSubArray
+
+build Problem_581_MInSubArray: CXX_EXECUTABLE_LINKER__Problem_581_MInSubArray_Debug CMakeFiles/Problem_581_MInSubArray.dir/LeetCode/Problem_581_MInSubArray.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_581_MInSubArray.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_581_MInSubArray
+  TARGET_PDB = Problem_581_MInSubArray.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_811_SubdomainVisits
+
+
+#############################################
+# Order-only phony target for Problem_811_SubdomainVisits
+
+build cmake_object_order_depends_target_Problem_811_SubdomainVisits: phony || CMakeFiles/Problem_811_SubdomainVisits.dir
+
+build CMakeFiles/Problem_811_SubdomainVisits.dir/LeetCode/Problem_811_SubdomainVisits.cpp.o: CXX_COMPILER__Problem_811_SubdomainVisits_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_811_SubdomainVisits.cpp || cmake_object_order_depends_target_Problem_811_SubdomainVisits
+  DEP_FILE = CMakeFiles/Problem_811_SubdomainVisits.dir/LeetCode/Problem_811_SubdomainVisits.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_811_SubdomainVisits.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_811_SubdomainVisits.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_811_SubdomainVisits
+
+
+#############################################
+# Link the executable Problem_811_SubdomainVisits
+
+build Problem_811_SubdomainVisits: CXX_EXECUTABLE_LINKER__Problem_811_SubdomainVisits_Debug CMakeFiles/Problem_811_SubdomainVisits.dir/LeetCode/Problem_811_SubdomainVisits.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_811_SubdomainVisits.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_811_SubdomainVisits
+  TARGET_PDB = Problem_811_SubdomainVisits.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_856_ParenthesesScore
+
+
+#############################################
+# Order-only phony target for Problem_856_ParenthesesScore
+
+build cmake_object_order_depends_target_Problem_856_ParenthesesScore: phony || CMakeFiles/Problem_856_ParenthesesScore.dir
+
+build CMakeFiles/Problem_856_ParenthesesScore.dir/LeetCode/Problem_856_ParenthesesScore.cpp.o: CXX_COMPILER__Problem_856_ParenthesesScore_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_856_ParenthesesScore.cpp || cmake_object_order_depends_target_Problem_856_ParenthesesScore
+  DEP_FILE = CMakeFiles/Problem_856_ParenthesesScore.dir/LeetCode/Problem_856_ParenthesesScore.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_856_ParenthesesScore.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_856_ParenthesesScore.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_856_ParenthesesScore
+
+
+#############################################
+# Link the executable Problem_856_ParenthesesScore
+
+build Problem_856_ParenthesesScore: CXX_EXECUTABLE_LINKER__Problem_856_ParenthesesScore_Debug CMakeFiles/Problem_856_ParenthesesScore.dir/LeetCode/Problem_856_ParenthesesScore.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_856_ParenthesesScore.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_856_ParenthesesScore
+  TARGET_PDB = Problem_856_ParenthesesScore.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_921_MinAddParentheses
+
+
+#############################################
+# Order-only phony target for Problem_921_MinAddParentheses
+
+build cmake_object_order_depends_target_Problem_921_MinAddParentheses: phony || CMakeFiles/Problem_921_MinAddParentheses.dir
+
+build CMakeFiles/Problem_921_MinAddParentheses.dir/LeetCode/Problem_921_MinAddParentheses.cpp.o: CXX_COMPILER__Problem_921_MinAddParentheses_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LeetCode/Problem_921_MinAddParentheses.cpp || cmake_object_order_depends_target_Problem_921_MinAddParentheses
+  DEP_FILE = CMakeFiles/Problem_921_MinAddParentheses.dir/LeetCode/Problem_921_MinAddParentheses.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_921_MinAddParentheses.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_921_MinAddParentheses.dir/LeetCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_921_MinAddParentheses
+
+
+#############################################
+# Link the executable Problem_921_MinAddParentheses
+
+build Problem_921_MinAddParentheses: CXX_EXECUTABLE_LINKER__Problem_921_MinAddParentheses_Debug CMakeFiles/Problem_921_MinAddParentheses.dir/LeetCode/Problem_921_MinAddParentheses.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_921_MinAddParentheses.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_921_MinAddParentheses
+  TARGET_PDB = Problem_921_MinAddParentheses.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_1820_FindLetter
+
+
+#############################################
+# Order-only phony target for Problem_1820_FindLetter
+
+build cmake_object_order_depends_target_Problem_1820_FindLetter: phony || CMakeFiles/Problem_1820_FindLetter.dir
+
+build CMakeFiles/Problem_1820_FindLetter.dir/LintCode/Problem_1820_FindLetter.cpp.o: CXX_COMPILER__Problem_1820_FindLetter_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LintCode/Problem_1820_FindLetter.cpp || cmake_object_order_depends_target_Problem_1820_FindLetter
+  DEP_FILE = CMakeFiles/Problem_1820_FindLetter.dir/LintCode/Problem_1820_FindLetter.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_1820_FindLetter.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_1820_FindLetter.dir/LintCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_1820_FindLetter
+
+
+#############################################
+# Link the executable Problem_1820_FindLetter
+
+build Problem_1820_FindLetter: CXX_EXECUTABLE_LINKER__Problem_1820_FindLetter_Debug CMakeFiles/Problem_1820_FindLetter.dir/LintCode/Problem_1820_FindLetter.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_1820_FindLetter.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_1820_FindLetter
+  TARGET_PDB = Problem_1820_FindLetter.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_596_MinSubTreee
+
+
+#############################################
+# Order-only phony target for Problem_596_MinSubTreee
+
+build cmake_object_order_depends_target_Problem_596_MinSubTreee: phony || CMakeFiles/Problem_596_MinSubTreee.dir
+
+build CMakeFiles/Problem_596_MinSubTreee.dir/LintCode/Problem_596_MinSubTreee.cpp.o: CXX_COMPILER__Problem_596_MinSubTreee_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LintCode/Problem_596_MinSubTreee.cpp || cmake_object_order_depends_target_Problem_596_MinSubTreee
+  DEP_FILE = CMakeFiles/Problem_596_MinSubTreee.dir/LintCode/Problem_596_MinSubTreee.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_596_MinSubTreee.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_596_MinSubTreee.dir/LintCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_596_MinSubTreee
+
+
+#############################################
+# Link the executable Problem_596_MinSubTreee
+
+build Problem_596_MinSubTreee: CXX_EXECUTABLE_LINKER__Problem_596_MinSubTreee_Debug CMakeFiles/Problem_596_MinSubTreee.dir/LintCode/Problem_596_MinSubTreee.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_596_MinSubTreee.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_596_MinSubTreee
+  TARGET_PDB = Problem_596_MinSubTreee.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_646_FirstUniqChar
+
+
+#############################################
+# Order-only phony target for Problem_646_FirstUniqChar
+
+build cmake_object_order_depends_target_Problem_646_FirstUniqChar: phony || CMakeFiles/Problem_646_FirstUniqChar.dir
+
+build CMakeFiles/Problem_646_FirstUniqChar.dir/LintCode/Problem_646_FirstUniqChar.cpp.o: CXX_COMPILER__Problem_646_FirstUniqChar_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LintCode/Problem_646_FirstUniqChar.cpp || cmake_object_order_depends_target_Problem_646_FirstUniqChar
+  DEP_FILE = CMakeFiles/Problem_646_FirstUniqChar.dir/LintCode/Problem_646_FirstUniqChar.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_646_FirstUniqChar.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_646_FirstUniqChar.dir/LintCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_646_FirstUniqChar
+
+
+#############################################
+# Link the executable Problem_646_FirstUniqChar
+
+build Problem_646_FirstUniqChar: CXX_EXECUTABLE_LINKER__Problem_646_FirstUniqChar_Debug CMakeFiles/Problem_646_FirstUniqChar.dir/LintCode/Problem_646_FirstUniqChar.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_646_FirstUniqChar.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_646_FirstUniqChar
+  TARGET_PDB = Problem_646_FirstUniqChar.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_702_ConcatStr
+
+
+#############################################
+# Order-only phony target for Problem_702_ConcatStr
+
+build cmake_object_order_depends_target_Problem_702_ConcatStr: phony || CMakeFiles/Problem_702_ConcatStr.dir
+
+build CMakeFiles/Problem_702_ConcatStr.dir/LintCode/Problem_702_ConcatStr.cpp.o: CXX_COMPILER__Problem_702_ConcatStr_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LintCode/Problem_702_ConcatStr.cpp || cmake_object_order_depends_target_Problem_702_ConcatStr
+  DEP_FILE = CMakeFiles/Problem_702_ConcatStr.dir/LintCode/Problem_702_ConcatStr.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_702_ConcatStr.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_702_ConcatStr.dir/LintCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_702_ConcatStr
+
+
+#############################################
+# Link the executable Problem_702_ConcatStr
+
+build Problem_702_ConcatStr: CXX_EXECUTABLE_LINKER__Problem_702_ConcatStr_Debug CMakeFiles/Problem_702_ConcatStr.dir/LintCode/Problem_702_ConcatStr.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_702_ConcatStr.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_702_ConcatStr
+  TARGET_PDB = Problem_702_ConcatStr.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Problem_844_PairNumbers
+
+
+#############################################
+# Order-only phony target for Problem_844_PairNumbers
+
+build cmake_object_order_depends_target_Problem_844_PairNumbers: phony || CMakeFiles/Problem_844_PairNumbers.dir
+
+build CMakeFiles/Problem_844_PairNumbers.dir/LintCode/Problem_844_PairNumbers.cpp.o: CXX_COMPILER__Problem_844_PairNumbers_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/LintCode/Problem_844_PairNumbers.cpp || cmake_object_order_depends_target_Problem_844_PairNumbers
+  DEP_FILE = CMakeFiles/Problem_844_PairNumbers.dir/LintCode/Problem_844_PairNumbers.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_844_PairNumbers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_844_PairNumbers.dir/LintCode
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_844_PairNumbers
+
+
+#############################################
+# Link the executable Problem_844_PairNumbers
+
+build Problem_844_PairNumbers: CXX_EXECUTABLE_LINKER__Problem_844_PairNumbers_Debug CMakeFiles/Problem_844_PairNumbers.dir/LintCode/Problem_844_PairNumbers.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_844_PairNumbers.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_844_PairNumbers
+  TARGET_PDB = Problem_844_PairNumbers.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target DiffArray
@@ -196,6 +692,37 @@ build LN_LvalRval02: CXX_EXECUTABLE_LINKER__LN_LvalRval02_Debug CMakeFiles/LN_Lv
   TARGET_PDB = LN_LvalRval02.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target TestReverse
+
+
+#############################################
+# Order-only phony target for TestReverse
+
+build cmake_object_order_depends_target_TestReverse: phony || CMakeFiles/TestReverse.dir
+
+build CMakeFiles/TestReverse.dir/_BasicConcept/TestReverse.cpp.o: CXX_COMPILER__TestReverse_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_BasicConcept/TestReverse.cpp || cmake_object_order_depends_target_TestReverse
+  DEP_FILE = CMakeFiles/TestReverse.dir/_BasicConcept/TestReverse.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/TestReverse.dir
+  OBJECT_FILE_DIR = CMakeFiles/TestReverse.dir/_BasicConcept
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target TestReverse
+
+
+#############################################
+# Link the executable TestReverse
+
+build TestReverse: CXX_EXECUTABLE_LINKER__TestReverse_Debug CMakeFiles/TestReverse.dir/_BasicConcept/TestReverse.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/TestReverse.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = TestReverse
+  TARGET_PDB = TestReverse.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Problem_AutoX01
 
 
@@ -289,6 +816,99 @@ build Problem_AutoX03: CXX_EXECUTABLE_LINKER__Problem_AutoX03_Debug CMakeFiles/P
   TARGET_PDB = Problem_AutoX03.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target Problem_266_B_QueueAtSchool
+
+
+#############################################
+# Order-only phony target for Problem_266_B_QueueAtSchool
+
+build cmake_object_order_depends_target_Problem_266_B_QueueAtSchool: phony || CMakeFiles/Problem_266_B_QueueAtSchool.dir
+
+build CMakeFiles/Problem_266_B_QueueAtSchool.dir/_Contest/CF/Problem_266_B_QueueAtSchool.cpp.o: CXX_COMPILER__Problem_266_B_QueueAtSchool_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_Contest/CF/Problem_266_B_QueueAtSchool.cpp || cmake_object_order_depends_target_Problem_266_B_QueueAtSchool
+  DEP_FILE = CMakeFiles/Problem_266_B_QueueAtSchool.dir/_Contest/CF/Problem_266_B_QueueAtSchool.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/Problem_266_B_QueueAtSchool.dir
+  OBJECT_FILE_DIR = CMakeFiles/Problem_266_B_QueueAtSchool.dir/_Contest/CF
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Problem_266_B_QueueAtSchool
+
+
+#############################################
+# Link the executable Problem_266_B_QueueAtSchool
+
+build Problem_266_B_QueueAtSchool: CXX_EXECUTABLE_LINKER__Problem_266_B_QueueAtSchool_Debug CMakeFiles/Problem_266_B_QueueAtSchool.dir/_Contest/CF/Problem_266_B_QueueAtSchool.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Problem_266_B_QueueAtSchool.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Problem_266_B_QueueAtSchool
+  TARGET_PDB = Problem_266_B_QueueAtSchool.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target IOTest
+
+
+#############################################
+# Order-only phony target for IOTest
+
+build cmake_object_order_depends_target_IOTest: phony || CMakeFiles/IOTest.dir
+
+build CMakeFiles/IOTest.dir/_Test/IOTest.cpp.o: CXX_COMPILER__IOTest_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_Test/IOTest.cpp || cmake_object_order_depends_target_IOTest
+  DEP_FILE = CMakeFiles/IOTest.dir/_Test/IOTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/IOTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/IOTest.dir/_Test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target IOTest
+
+
+#############################################
+# Link the executable IOTest
+
+build IOTest: CXX_EXECUTABLE_LINKER__IOTest_Debug CMakeFiles/IOTest.dir/_Test/IOTest.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/IOTest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = IOTest
+  TARGET_PDB = IOTest.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target StringTest
+
+
+#############################################
+# Order-only phony target for StringTest
+
+build cmake_object_order_depends_target_StringTest: phony || CMakeFiles/StringTest.dir
+
+build CMakeFiles/StringTest.dir/_Test/StringTest.cpp.o: CXX_COMPILER__StringTest_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_Test/StringTest.cpp || cmake_object_order_depends_target_StringTest
+  DEP_FILE = CMakeFiles/StringTest.dir/_Test/StringTest.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/StringTest.dir
+  OBJECT_FILE_DIR = CMakeFiles/StringTest.dir/_Test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target StringTest
+
+
+#############################################
+# Link the executable StringTest
+
+build StringTest: CXX_EXECUTABLE_LINKER__StringTest_Debug CMakeFiles/StringTest.dir/_Test/StringTest.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/StringTest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = StringTest
+  TARGET_PDB = StringTest.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target TEST_StringFunc
 
 
@@ -349,6 +969,37 @@ build TestMove: CXX_EXECUTABLE_LINKER__TestMove_Debug CMakeFiles/TestMove.dir/_T
   PRE_LINK = :
   TARGET_FILE = TestMove
   TARGET_PDB = TestMove.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target TestRecur
+
+
+#############################################
+# Order-only phony target for TestRecur
+
+build cmake_object_order_depends_target_TestRecur: phony || CMakeFiles/TestRecur.dir
+
+build CMakeFiles/TestRecur.dir/_Test/TestRecur.cpp.o: CXX_COMPILER__TestRecur_Debug /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/_Test/TestRecur.cpp || cmake_object_order_depends_target_TestRecur
+  DEP_FILE = CMakeFiles/TestRecur.dir/_Test/TestRecur.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/TestRecur.dir
+  OBJECT_FILE_DIR = CMakeFiles/TestRecur.dir/_Test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target TestRecur
+
+
+#############################################
+# Link the executable TestRecur
+
+build TestRecur: CXX_EXECUTABLE_LINKER__TestRecur_Debug CMakeFiles/TestRecur.dir/_Test/TestRecur.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/TestRecur.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = TestRecur
+  TARGET_PDB = TestRecur.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target enumerate
@@ -446,7 +1097,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/cmake-build-debug
 
-build all: phony Problem_397_IntegerReplacement DiffArray DiffArray2D LN_LvalRval01 LN_LvalRval02 Problem_AutoX01 Problem_AutoX02 Problem_AutoX03 TEST_StringFunc TestMove enumerate CMakeCXXCompilerId
+build all: phony Problem_1313_DecompRLEList Problem_1694_ReformatNumber Problem_1800_MaxAscendSum Problem_2068_AlmostEqual Problem_2119_TwoTimeReverse Problem_31_NextPermutation Problem_327_RangeSum Problem_397_IntegerReplacement Problem_581_MInSubArray Problem_811_SubdomainVisits Problem_856_ParenthesesScore Problem_921_MinAddParentheses Problem_1820_FindLetter Problem_596_MinSubTreee Problem_646_FirstUniqChar Problem_702_ConcatStr Problem_844_PairNumbers DiffArray DiffArray2D LN_LvalRval01 LN_LvalRval02 TestReverse Problem_AutoX01 Problem_AutoX02 Problem_AutoX03 Problem_266_B_QueueAtSchool IOTest StringTest TEST_StringFunc TestMove TestRecur enumerate CMakeCXXCompilerId
 
 # =============================================================================
 # Built-in targets

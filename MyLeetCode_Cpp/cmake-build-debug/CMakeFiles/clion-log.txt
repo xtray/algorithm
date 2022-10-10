@@ -1,14 +1,35 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp -B /Users/xtray/dev/project/MyLeetCode/MyLeetCode_Cpp/cmake-build-debug
+    -- src/Problem_1313_DecompRLEList.cpp will be compiled to bin/Problem_1313_DecompRLEList
+    -- src/Problem_1694_ReformatNumber.cpp will be compiled to bin/Problem_1694_ReformatNumber
+    -- src/Problem_1800_MaxAscendSum.cpp will be compiled to bin/Problem_1800_MaxAscendSum
+    -- src/Problem_2068_AlmostEqual.cpp will be compiled to bin/Problem_2068_AlmostEqual
+    -- src/Problem_2119_TwoTimeReverse.cpp will be compiled to bin/Problem_2119_TwoTimeReverse
+    -- src/Problem_31_NextPermutation.cpp will be compiled to bin/Problem_31_NextPermutation
+    -- src/Problem_327_RangeSum.cpp will be compiled to bin/Problem_327_RangeSum
     -- src/Problem_397_IntegerReplacement.cpp will be compiled to bin/Problem_397_IntegerReplacement
+    -- src/Problem_581_MInSubArray.cpp will be compiled to bin/Problem_581_MInSubArray
+    -- src/Problem_811_SubdomainVisits.cpp will be compiled to bin/Problem_811_SubdomainVisits
+    -- src/Problem_856_ParenthesesScore.cpp will be compiled to bin/Problem_856_ParenthesesScore
+    -- src/Problem_921_MinAddParentheses.cpp will be compiled to bin/Problem_921_MinAddParentheses
+    -- src/Problem_1820_FindLetter.cpp will be compiled to bin/Problem_1820_FindLetter
+    -- src/Problem_596_MinSubTreee.cpp will be compiled to bin/Problem_596_MinSubTreee
+    -- src/Problem_646_FirstUniqChar.cpp will be compiled to bin/Problem_646_FirstUniqChar
+    -- src/Problem_702_ConcatStr.cpp will be compiled to bin/Problem_702_ConcatStr
+    -- src/Problem_844_PairNumbers.cpp will be compiled to bin/Problem_844_PairNumbers
     -- src/DiffArray.cpp will be compiled to bin/DiffArray
     -- src/DiffArray2D.cpp will be compiled to bin/DiffArray2D
     -- src/LN_LvalRval01.cpp will be compiled to bin/LN_LvalRval01
     -- src/LN_LvalRval02.cpp will be compiled to bin/LN_LvalRval02
+    -- src/TestReverse.cpp will be compiled to bin/TestReverse
     -- src/Problem_AutoX01.cpp will be compiled to bin/Problem_AutoX01
     -- src/Problem_AutoX02.cpp will be compiled to bin/Problem_AutoX02
     -- src/Problem_AutoX03.cpp will be compiled to bin/Problem_AutoX03
+    -- src/Problem_266_B_QueueAtSchool.cpp will be compiled to bin/Problem_266_B_QueueAtSchool
+    -- src/IOTest.cpp will be compiled to bin/IOTest
+    -- src/StringTest.cpp will be compiled to bin/StringTest
     -- src/TEST_StringFunc.cpp will be compiled to bin/TEST_StringFunc
     -- src/TestMove.cpp will be compiled to bin/TestMove
+    -- src/TestRecur.cpp will be compiled to bin/TestRecur
     -- src/enumerate.cpp will be compiled to bin/enumerate
     -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
 -- Configuring done

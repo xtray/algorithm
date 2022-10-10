@@ -37,10 +37,18 @@ public class UnionFind_1 {
         //     }
         //     return i;
         // }
+
         // 路径压缩的简单写法
+        // private int find(int i) {
+        //     if (parent[i] == i) return i;
+        //     return parent[i] = find(parent[i]);
+        // }
+
         private int find(int i) {
-            if (parent[i] == i) return i;
-            return parent[i] = find(parent[i]);
+            if (parent[i] != i) {
+                parent[i] = find(parent[i]);
+            }
+            return parent[i];
         }
 
         public void union(int i, int j) {

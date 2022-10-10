@@ -35,7 +35,7 @@ public class Problem_473_MakeSquare {
                     if (sum + arr[i] < len) {
                         ans = process(arr, status | 1 << i, sum + arr[i], len, edges);
                     } else {
-                        // 当前边凑齐了, 去凑吓一跳边
+                        // 当前边凑齐了, 去凑下一条边
                         ans = process(arr, status | 1 << i, 0, len, edges - 1);
                     }
                 }
@@ -84,7 +84,7 @@ public class Problem_473_MakeSquare {
                     if (sum + arr[i] < len) {
                         ans = process2(arr, status | 1 << i, sum + arr[i], len, edges, dp);
                     } else {
-                        // 当前边凑齐了, 去凑吓一跳边
+                        // 当前边凑齐了, 去凑下一条边
                         ans = process2(arr, status | 1 << i, 0, len, edges - 1, dp);
                     }
                 }
